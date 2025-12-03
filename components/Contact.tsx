@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../constants';
 
 const Contact: React.FC = () => {
@@ -18,12 +18,22 @@ const Contact: React.FC = () => {
               Whether you have a project in mind, need a digital strategy audit, 
               or just want to chat about tech—I'm available.
             </p>
-            <a 
-              href={`mailto:${CONTACT_INFO.email}`} 
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-white text-primary font-bold hover:bg-gray-100 transition-colors"
-            >
-              <Mail className="mr-2 h-4 w-4" /> Say Hello
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a 
+                href={`mailto:${CONTACT_INFO.email}`} 
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-accent text-white font-bold hover:bg-accentHover transition-colors"
+              >
+                <Mail className="mr-2 h-4 w-4" /> Send Email
+              </a>
+              <a 
+                href={`https://wa.me/${CONTACT_INFO.whatsapp.replace(/[^0-9]/g, '')}`} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-slate-700 text-white font-bold hover:bg-slate-600 transition-colors border border-slate-600"
+              >
+                <MessageCircle className="mr-2 h-4 w-4 text-green-400" /> WhatsApp
+              </a>
+            </div>
           </div>
 
           {/* Contact Details */}
@@ -58,10 +68,10 @@ const Contact: React.FC = () => {
             <div>
                <h4 className="text-white font-semibold mb-4">Connect</h4>
                <div className="flex gap-4">
-                 <a href={CONTACT_INFO.linkedin} className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-textDim hover:bg-accent hover:text-white transition-all">
+                 <a href={CONTACT_INFO.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-textDim hover:bg-[#0077b5] hover:text-white transition-all">
                    <Linkedin className="w-5 h-5" />
                  </a>
-                 <a href={CONTACT_INFO.github} className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-textDim hover:bg-accent hover:text-white transition-all">
+                 <a href={CONTACT_INFO.github} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-textDim hover:bg-black hover:text-white transition-all">
                    <Github className="w-5 h-5" />
                  </a>
                </div>

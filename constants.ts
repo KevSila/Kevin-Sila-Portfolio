@@ -19,11 +19,11 @@ export const NAV_LINKS = [
 
 export const SKILLS_DATA: SkillData[] = [
   { subject: 'Web Dev', A: 95, fullMark: 100 },
-  { subject: 'UI/UX', A: 85, fullMark: 100 },
-  { subject: 'Data Analytics', A: 80, fullMark: 100 },
+  { subject: 'UI/UX', A: 90, fullMark: 100 },
+  { subject: 'Data Analytics', A: 85, fullMark: 100 },
   { subject: 'Digital Strategy', A: 90, fullMark: 100 },
-  { subject: 'SEO/Marketing', A: 85, fullMark: 100 },
-  { subject: 'System Auto', A: 75, fullMark: 100 },
+  { subject: 'Project Mgmt', A: 85, fullMark: 100 },
+  { subject: 'Networking', A: 75, fullMark: 100 },
 ];
 
 export const SERVICES: Service[] = [
@@ -61,92 +61,144 @@ export const SERVICES: Service[] = [
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    year: '2023 - Present',
-    role: 'Performance Marketing & Optimization',
+    year: 'May 2025 - July 2025',
+    role: 'Website & Digital Platform Assistant',
+    company: 'Christine Campbell Rapin',
     description: [
-      'Managing Google Ads & Meta Ads to optimize conversions.',
-      'Utilizing Google Analytics & Looker Studio for deep performance insights.',
-      'Achieving higher ROI through targeted audience strategies.'
+      'Managed and maintained WordPress website using Divi theme builder.',
+      'Customized CSS and troublshooted front-end display issues.',
+      'Collaborated on funnel integration within GoHighLevel (Actionera) for lead capture.',
+      'Performed regular site audits, updates, and SEO optimizations.'
     ]
   },
   {
-    year: '2022 - Present',
-    role: 'Digital Media Strategist',
+    year: 'Mar 2022 - May 2025',
+    role: 'Information Technology Lead',
+    company: 'Maisha Youth Movement',
     description: [
-      'Spearheaded digital media strategies aimed at increasing engagement by 20%.',
-      'Created content calendars and brand style guides.',
-      'Enhanced IT systems and cloud-based storage solutions.'
+      'Spearheaded digital media strategies aimed at increasing engagement and created the official digital media style guide.',
+      'Designed the organizations prototype website using Figma and orchestrated the development process.',
+      'Led the integration of Google Cloud services for secure data storage across 47 county chapters.',
+      'Represented the movement in national forums advocating for youth health and SRHR.'
     ]
   },
   {
-    year: '2022 - Present',
-    role: 'Website & UI/UX Development',
+    year: 'Dec 2020 - May 2025',
+    role: 'Chairperson - Machakos Chapter',
+    company: 'Maisha Youth Movement',
     description: [
-      'Designed wireframes and prototypes for the Maisha Youth website.',
-      'Built responsive websites using CMS tools and custom code.',
-      'Applied frontend & backend SEO best practices.'
+      'Led youth-focused health awareness initiatives and community engagement programs.',
+      'Drafted comprehensive county work plans, budgets, and event strategies.',
+      'Mentored members in proposal writing, leadership, and conflict resolution.',
+      'Authored high-quality concept notes and reports that secured funding.'
     ]
   },
   {
-    year: '2020 - Present',
-    role: 'Technical Writing & Blogging',
+    year: 'Jan 2024 - Jan 2025',
+    role: 'Assistant Manager & I.T Associate',
+    company: 'Equavo Limited',
     description: [
-      'Published blogs on web development, AI, and UX/UI.',
-      'Wrote technical documentation for developer tools.',
-      'Optimized content for search engines.'
+      'Managed daily operations and finances for crude avocado oil production.',
+      'Maintained Fruit Inventory and Production Spreadsheets for quality control metrics.',
+      'Provided technical support and managed IT-related tasks including data entry and analysis.',
+      'Designed company identification cards and operational workflow spreadsheets.'
     ]
   },
   {
-    year: 'Fellowship',
-    role: 'President’s Fellowship Program',
+    year: 'Feb 2024 - Mar 2024',
+    role: 'Research Assistant (Cluster Lead)',
+    company: 'UNAIDS Community Rights Survey',
+    description: [
+      'Led Cluster 2 (Nairobi, Kajiado, Embu, Kitui) in assessing community rights in HIV response.',
+      'Administered questionnaires and facilitated Focus Group Discussions (FGDs).',
+      'Ensured data quality and adhered to ethical guidelines during collection.',
+      'Coordinated with Regional HIV/AIDS Coordinators and supervised fellow assistants.'
+    ]
+  },
+  {
+    year: 'Mar 2024 - Dec 2024',
+    role: 'Fellow - President’s Fellowship Program',
     company: 'Global Peace Foundation Kenya',
     description: [
-      'Selected as Machakos County representative.',
-      'Acquired advanced skills in leadership, conflict resolution, and project management.',
-      'Championed Peace and Climate Change initiatives.'
+      'Selected as Machakos County representative for this prestigious leadership program.',
+      'Acquired advanced skills in conflict resolution, peace-building, and strategic communication.',
+      'Championed Peace and Climate Change initiatives as a designated Ambassador.'
     ]
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
+    title: 'Kevin Sila Books',
+    category: 'Author & Publisher',
+    description: 'My official platform showcasing my published books and written works. A hub for my literary contributions and resources.',
+    techStack: ['Web Design', 'Content Strategy', 'Publishing'],
+    links: [
+      { label: 'Visit Book Site', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
+    ],
+    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800'
+  },
+  {
     title: 'UNEP Staff Portal',
     category: 'System Development',
     description: 'A Laravel & MySQL-based staff management system designed to streamline employee data, authentication, and role-based access control.',
     techStack: ['Laravel', 'MySQL', 'Bootstrap', 'Git'],
-    repo: 'https://github.com/kevsila',
-    image: 'https://picsum.photos/id/0/600/400'
+    links: [
+      { label: 'GitHub Repo', url: 'https://github.com/KevSila/UNEP-staff-portal', type: 'github' },
+      { label: 'Documentation', url: 'https://docs.google.com/document/d/17XXWR1IgGD7LWUByKq4Es2yK9Oq7zEAtp8B1NkCGkPs/edit?usp=sharing', type: 'doc' }
+    ],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Maisha Youth Website',
+    title: 'Maisha Youth Website Strategy',
     category: 'UI/UX & Web Design',
-    description: 'Designed fully structured wireframes, prototypes, and sitemaps. Implemented SEO strategies and optimized user flow.',
-    techStack: ['Figma', 'UI/UX', 'Prototyping'],
-    link: '#',
-    image: 'https://picsum.photos/id/119/600/400'
+    description: 'Designed fully structured wireframes, prototypes, and sitemaps. Implemented SEO strategies and optimized user flow for the national movement.',
+    techStack: ['Figma', 'UI/UX', 'SEO'],
+    links: [
+      { label: 'Figma Wireframe', url: 'https://www.figma.com/design/EOfvREd0WNcb6B2IX58Px9', type: 'figma' },
+      { label: 'Figma Prototype', url: 'https://www.figma.com/design/hEER7bARHmufwmBUkH2Y2W', type: 'figma' }
+    ],
+    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Google & Meta Ads Campaigns',
-    category: 'Digital Marketing',
-    description: 'Managed high-performance ad campaigns achieving higher ROI. Analyzed performance using Looker Studio.',
+    title: 'Digital Media Strategy',
+    category: 'Digital Strategy',
+    description: 'Developed comprehensive content calendars, brand strategies, and style guides to boost digital engagement and consistency.',
+    techStack: ['Strategy', 'Branding', 'Content'],
+    links: [
+      { label: 'Strategy Doc', url: 'https://docs.google.com/document/d/13RyIUQcC0KQFOoLaf8XI2wfibTtpqLAZ0a81RZCjRVE/edit?usp=sharing', type: 'doc' },
+      { label: 'Style Guide', url: 'https://docs.google.com/document/d/1Wc98YfPO6f5ngQDU4FhtfKpTizJNJWnPI2ZTaVvkZpw/edit?tab=t.0', type: 'doc' }
+    ],
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    title: 'Ads Campaign Performance',
+    category: 'Data Analytics & Marketing',
+    description: 'Managed high-performance ad campaigns on Google & Meta. Optimized audience targeting and analyzed performance using Looker Studio.',
     techStack: ['Google Ads', 'Meta Ads', 'Looker Studio'],
-    link: '#',
-    image: 'https://picsum.photos/id/160/600/400'
+    links: [
+      { label: 'Google Ads Report', url: 'https://docs.google.com/document/d/16aAv_Zs4N6c4OkhW46tn11BTjZX9rGA8I5VeChFQflg/edit?usp=sharing', type: 'doc' },
+      { label: 'Meta Ads Insights', url: 'https://docs.google.com/document/d/1Gr245d5y3vPOOvtKXgRKHnUcnn1s_yY2N1lnhTYXWew/edit?usp=sharing', type: 'doc' }
+    ],
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Data Analytics Dashboard',
-    category: 'Data Visualization',
-    description: 'Built SQL-based queries and interactive Tableau dashboards to visualize complex datasets for decision making.',
-    techStack: ['SQL', 'Tableau', 'Power BI'],
-    link: '#',
-    image: 'https://picsum.photos/id/48/600/400'
+    title: 'Blog & Technical Writing',
+    category: 'Content Creation',
+    description: 'Authored tech-focused articles on web development, digital marketing, and AI innovations.',
+    techStack: ['LinkedIn', 'Medium', 'Technical Writing'],
+    links: [
+      { label: 'Read Articles', url: 'https://www.linkedin.com/in/kevin-sila-9143b618a/recent-activity/articles/', type: 'live' }
+    ],
+    image: 'https://images.unsplash.com/photo-1499750310159-52f0f834631e?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
 export const CONTACT_INFO = {
   email: 'kevinsila100@gmail.com',
   phone: '+254 717578394',
+  whatsapp: '+254717578394',
   location: 'Nairobi, Kenya (EAT – UTC+3)',
-  linkedin: 'https://linkedin.com/in/kevsila', // Placeholder based on name
-  github: 'https://github.com/kevsila', // Placeholder based on name
+  linkedin: 'https://www.linkedin.com/in/kevin-sila-9143b618a/', 
+  github: 'https://github.com/kevsila',
 };
