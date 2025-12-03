@@ -49,16 +49,16 @@ const Hero: React.FC = () => {
 
         {/* Visual/Image Area */}
         <div className="relative hidden md:block">
-          <div className="relative w-full aspect-square max-w-md mx-auto group">
+          <div className="relative w-full aspect-[4/5] max-w-md mx-auto group">
              {/* Decorative Frame */}
             <div className="absolute inset-0 border-2 border-slate-700 rounded-3xl transform rotate-6 translate-x-4 translate-y-4 transition-transform group-hover:rotate-3 group-hover:translate-x-2 group-hover:translate-y-2"></div>
             <div className="absolute inset-0 bg-slate-800 rounded-3xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=1000" 
-                alt="Kevin Sila Workspace" 
-                className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
+                src="/images/kevin-profile.jpg" 
+                alt="Kevin Sila" 
+                className="w-full h-full object-cover opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700" 
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8">
                  <p className="text-white font-bold text-xl">Kevin Yumbya Sila</p>
                  <p className="text-accent font-medium">Nairobi Based Developer</p>

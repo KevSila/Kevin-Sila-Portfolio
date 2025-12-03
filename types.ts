@@ -22,6 +22,7 @@ export interface ExperienceItem {
   role: string;
   company?: string;
   description: string[];
+  image?: string;
 }
 
 export interface Service {

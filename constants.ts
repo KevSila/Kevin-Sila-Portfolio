@@ -78,9 +78,9 @@ export const EXPERIENCE: ExperienceItem[] = [
     description: [
       'Spearheaded digital media strategies aimed at increasing engagement and created the official digital media style guide.',
       'Designed the organizations prototype website using Figma and orchestrated the development process.',
-      'Led the integration of Google Cloud services for secure data storage across 47 county chapters.',
-      'Represented the movement in national forums advocating for youth health and SRHR.'
-    ]
+      'Led the integration of Google Cloud services for secure data storage across 47 county chapters.'
+    ],
+    image: '/images/maisha-marathon.jpg'
   },
   {
     year: 'Dec 2020 - May 2025',
@@ -91,7 +91,8 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Drafted comprehensive county work plans, budgets, and event strategies.',
       'Mentored members in proposal writing, leadership, and conflict resolution.',
       'Authored high-quality concept notes and reports that secured funding.'
-    ]
+    ],
+    image: '/images/maisha-speaking.jpg'
   },
   {
     year: 'Jan 2024 - Jan 2025',
@@ -123,20 +124,31 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Selected as Machakos County representative for this prestigious leadership program.',
       'Acquired advanced skills in conflict resolution, peace-building, and strategic communication.',
       'Championed Peace and Climate Change initiatives as a designated Ambassador.'
-    ]
+    ],
+    image: '/images/gpf-certificate.jpg'
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Kevin Sila Books',
-    category: 'Author & Publisher',
-    description: 'My official platform showcasing my published books and written works. A hub for my literary contributions and resources.',
-    techStack: ['Web Design', 'Content Strategy', 'Publishing'],
+    title: 'Solitude in the Digital Age',
+    category: 'Published Book',
+    description: 'An exploration of connection, mental health, and isolation in the modern technological era.',
+    techStack: ['Author', 'Psychology', 'Tech'],
     links: [
-      { label: 'Visit Book Site', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
+      { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800'
+    image: '/images/book-solitude.jpg'
+  },
+  {
+    title: 'Firelit Wisdom',
+    category: 'Published Book',
+    description: 'Ancient truths for modern living. A collection of insights bridging traditional wisdom with contemporary challenges.',
+    techStack: ['Author', 'Culture', 'Philosophy'],
+    links: [
+      { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
+    ],
+    image: '/images/book-firelit.jpg'
   },
   {
     title: 'UNEP Staff Portal',
@@ -181,16 +193,6 @@ export const PROJECTS: Project[] = [
       { label: 'Meta Ads Insights', url: 'https://docs.google.com/document/d/1Gr245d5y3vPOOvtKXgRKHnUcnn1s_yY2N1lnhTYXWew/edit?usp=sharing', type: 'doc' }
     ],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    title: 'Blog & Technical Writing',
-    category: 'Content Creation',
-    description: 'Authored tech-focused articles on web development, digital marketing, and AI innovations.',
-    techStack: ['LinkedIn', 'Medium', 'Technical Writing'],
-    links: [
-      { label: 'Read Articles', url: 'https://www.linkedin.com/in/kevin-sila-9143b618a/recent-activity/articles/', type: 'live' }
-    ],
-    image: 'https://images.unsplash.com/photo-1499750310159-52f0f834631e?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
