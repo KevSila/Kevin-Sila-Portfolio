@@ -1,6 +1,7 @@
+
 import { LucideIcon } from 'lucide-react';
 
-export type LinkType = 'github' | 'live' | 'figma' | 'doc';
+export type LinkType = 'github' | 'live' | 'figma' | 'doc' | 'palette';
 
 export interface ProjectLink {
   label: string;

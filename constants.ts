@@ -1,3 +1,4 @@
+
 import { 
   Code2, 
   Palette, 
@@ -19,11 +20,11 @@ export const NAV_LINKS = [
 
 export const SKILLS_DATA: SkillData[] = [
   { subject: 'Web Dev', A: 95, fullMark: 100 },
-  { subject: 'UI/UX', A: 90, fullMark: 100 },
+  { subject: 'UI/UX', A: 92, fullMark: 100 },
   { subject: 'Data Analytics', A: 85, fullMark: 100 },
   { subject: 'Digital Strategy', A: 90, fullMark: 100 },
-  { subject: 'Project Mgmt', A: 85, fullMark: 100 },
-  { subject: 'Networking', A: 75, fullMark: 100 },
+  { subject: 'Creative Design', A: 95, fullMark: 100 },
+  { subject: 'System Architecture', A: 80, fullMark: 100 },
 ];
 
 export const SERVICES: Service[] = [
@@ -80,7 +81,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Designed the organizations prototype website using Figma and orchestrated the development process.',
       'Led the integration of Google Cloud services for secure data storage across 47 county chapters.'
     ],
-    image: '/images/maisha-marathon.jpg'
+    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800'
   },
   {
     year: 'Dec 2020 - May 2025',
@@ -92,7 +93,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Mentored members in proposal writing, leadership, and conflict resolution.',
       'Authored high-quality concept notes and reports that secured funding.'
     ],
-    image: '/images/maisha-speaking.jpg'
+    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=800'
   },
   {
     year: 'Jan 2024 - Jan 2025',
@@ -125,30 +126,30 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Acquired advanced skills in conflict resolution, peace-building, and strategic communication.',
       'Championed Peace and Climate Change initiatives as a designated Ambassador.'
     ],
-    image: '/images/gpf-certificate.jpg'
+    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Solitude in the Digital Age',
-    category: 'Published Book',
-    description: 'An exploration of connection, mental health, and isolation in the modern technological era.',
-    techStack: ['Author', 'Psychology', 'Tech'],
+    title: 'Digital Design Showcase',
+    category: 'Creative Portfolio',
+    description: 'A curated collection of my visual designs, freelance graphics, and brand identity projects. This portfolio highlights my work in digital media and creative direction.',
+    techStack: ['Photoshop', 'Canva', 'Branding', 'Digital Media'],
     links: [
-      { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
+      { label: 'View Designs', url: 'https://kevsiladesigns.netlify.app', type: 'palette' }
     ],
-    image: '/images/book-solitude.jpg'
+    image: 'https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Firelit Wisdom',
+    title: 'Solitude in the Digital Age',
     category: 'Published Book',
-    description: 'Ancient truths for modern living. A collection of insights bridging traditional wisdom with contemporary challenges.',
-    techStack: ['Author', 'Culture', 'Philosophy'],
+    description: 'An exploration of connection, mental health, and isolation in the modern technological era. Analyzes the impact of constant connectivity on the human psyche.',
+    techStack: ['Author', 'Psychology', 'Social Analysis'],
     links: [
       { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: '/images/book-firelit.jpg'
+    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800'
   },
   {
     title: 'UNEP Staff Portal',
@@ -173,26 +174,25 @@ export const PROJECTS: Project[] = [
     image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Digital Media Strategy',
-    category: 'Digital Strategy',
-    description: 'Developed comprehensive content calendars, brand strategies, and style guides to boost digital engagement and consistency.',
-    techStack: ['Strategy', 'Branding', 'Content'],
+    title: 'Firelit Wisdom',
+    category: 'Published Book',
+    description: 'Ancient truths for modern living. A collection of insights bridging traditional wisdom with contemporary challenges.',
+    techStack: ['Author', 'Culture', 'Philosophy'],
     links: [
-      { label: 'Strategy Doc', url: 'https://docs.google.com/document/d/13RyIUQcC0KQFOoLaf8XI2wfibTtpqLAZ0a81RZCjRVE/edit?usp=sharing', type: 'doc' },
-      { label: 'Style Guide', url: 'https://docs.google.com/document/d/1Wc98YfPO6f5ngQDU4FhtfKpTizJNJWnPI2ZTaVvkZpw/edit?tab=t.0', type: 'doc' }
+      { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800'
   },
   {
     title: 'Ads Campaign Performance',
-    category: 'Data Analytics & Marketing',
+    category: 'Data Analytics',
     description: 'Managed high-performance ad campaigns on Google & Meta. Optimized audience targeting and analyzed performance using Looker Studio.',
     techStack: ['Google Ads', 'Meta Ads', 'Looker Studio'],
     links: [
       { label: 'Google Ads Report', url: 'https://docs.google.com/document/d/16aAv_Zs4N6c4OkhW46tn11BTjZX9rGA8I5VeChFQflg/edit?usp=sharing', type: 'doc' },
       { label: 'Meta Ads Insights', url: 'https://docs.google.com/document/d/1Gr245d5y3vPOOvtKXgRKHnUcnn1s_yY2N1lnhTYXWew/edit?usp=sharing', type: 'doc' }
     ],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
