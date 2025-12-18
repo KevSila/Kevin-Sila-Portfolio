@@ -81,7 +81,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Designed the organizations prototype website using Figma and orchestrated the development process.',
       'Led the integration of Google Cloud services for secure data storage across 47 county chapters.'
     ],
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800'
+    image: 'images/maisha-speaking.jpg'
   },
   {
     year: 'Dec 2020 - May 2025',
@@ -93,7 +93,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Mentored members in proposal writing, leadership, and conflict resolution.',
       'Authored high-quality concept notes and reports that secured funding.'
     ],
-    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=800'
+    image: 'images/maisha-marathon.jpg'
   },
   {
     year: 'Jan 2024 - Jan 2025',
@@ -126,7 +126,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Acquired advanced skills in conflict resolution, peace-building, and strategic communication.',
       'Championed Peace and Climate Change initiatives as a designated Ambassador.'
     ],
-    image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800'
+    image: 'images/gpf-certificate.jpg'
   }
 ];
 
@@ -139,7 +139,7 @@ export const PROJECTS: Project[] = [
     links: [
       { label: 'View Designs', url: 'https://kevsiladesigns.netlify.app', type: 'palette' }
     ],
-    image: 'https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800'
   },
   {
     title: 'Solitude in the Digital Age',
@@ -149,7 +149,7 @@ export const PROJECTS: Project[] = [
     links: [
       { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&q=80&w=800'
+    image: 'images/book-solitude.jpg'
   },
   {
     title: 'UNEP Staff Portal',
@@ -181,7 +181,7 @@ export const PROJECTS: Project[] = [
     links: [
       { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=800'
+    image: 'images/book-firelit.jpg'
   },
   {
     title: 'Ads Campaign Performance',
