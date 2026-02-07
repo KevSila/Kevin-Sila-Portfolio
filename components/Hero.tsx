@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
             
             <div className="relative h-full w-full bg-slate-800 rounded-[2rem] overflow-hidden shadow-2xl border border-slate-700/50 transform transition-transform duration-700 group-hover:scale-[1.01] group-hover:-translate-y-1">
               <img 
-                src="public/images/kevin-profile.jpg" 
+                src="/images/kevin-profile.jpg" 
                 alt="Kevin Sila" 
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700" 
               />
