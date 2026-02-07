@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { EXPERIENCE } from '../constants.ts';
-import { Calendar } from 'lucide-react';
+import { Calendar, ArrowUpRight } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
@@ -32,6 +32,18 @@ const Experience: React.FC = () => {
                     <li key={i} className="text-slate-400 text-sm leading-relaxed">{desc}</li>
                   ))}
                 </ul>
+
+                {item.link && (
+                  <a 
+                    href={item.link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-accent text-sm font-bold hover:text-white transition-colors mb-4 group/link"
+                  >
+                    {item.link.label} 
+                    <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                  </a>
+                )}
 
                 {item.image && (
                   <div className="mt-4 rounded-lg overflow-hidden border border-slate-700/50 group-hover:border-accent/30 transition-colors">

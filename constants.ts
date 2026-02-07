@@ -62,6 +62,18 @@ export const SERVICES: Service[] = [
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
+    year: 'Jan 2024 - Present',
+    role: 'Freelance Developer & Strategist',
+    company: 'K-Sila Services',
+    description: [
+      'Automating Kenyan SMEs through AI integration and high-performance digital sales machines.',
+      'Developing conversion-optimized websites and automated WhatsApp sales funnels for nationwide reach.',
+      'Crafting comprehensive digital media strategies and premium visual identities (Style Guides).',
+      'Implementing National SEO strategies to dominate Google search results across all 47 counties.'
+    ],
+    link: { label: 'Visit K-Sila Services', url: 'https://ksilaservices.netlify.app' }
+  },
+  {
     year: 'May 2025 - July 2025',
     role: 'Website & Digital Platform Assistant',
     company: 'Christine Campbell Rapin',
@@ -107,17 +119,6 @@ export const EXPERIENCE: ExperienceItem[] = [
     ]
   },
   {
-    year: 'Feb 2024 - Mar 2024',
-    role: 'Research Assistant (Cluster Lead)',
-    company: 'UNAIDS Community Rights Survey',
-    description: [
-      'Led Cluster 2 (Nairobi, Kajiado, Embu, Kitui) in assessing community rights in HIV response.',
-      'Administered questionnaires and facilitated Focus Group Discussions (FGDs).',
-      'Ensured data quality and adhered to ethical guidelines during collection.',
-      'Coordinated with Regional HIV/AIDS Coordinators and supervised fellow assistants.'
-    ]
-  },
-  {
     year: 'Mar 2024 - Dec 2024',
     role: 'Fellow - President’s Fellowship Program',
     company: 'Global Peace Foundation Kenya',
@@ -132,67 +133,65 @@ export const EXPERIENCE: ExperienceItem[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Digital Design Showcase',
-    category: 'Creative Portfolio',
-    description: 'A curated collection of my visual designs, freelance graphics, and brand identity projects. This portfolio highlights my work in digital media and creative direction.',
-    techStack: ['Photoshop', 'Canva', 'Branding', 'Digital Media'],
+    title: 'AI Job Application Assistant',
+    category: 'AI & Productivity',
+    description: 'An elite AI-powered career optimization suite built with React and Google Gemini. It automates the generation of ATS-optimized CVs and tailored interview responses.',
+    techStack: ['React', 'Gemini API', 'TypeScript', 'Tailwind'],
     links: [
-      { label: 'View Designs', url: 'https://ksiladesigns.netlify.app', type: 'palette' }
+      { label: 'GitHub Repo', url: 'https://github.com/KevSila/Job-application-assistant', type: 'github' }
     ],
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Solitude in the Digital Age',
-    category: 'Published Book',
-    description: 'An exploration of connection, mental health, and isolation in the modern technological era. Analyzes the impact of constant connectivity on the human psyche.',
-    techStack: ['Author', 'Psychology', 'Social Analysis'],
+    title: 'AI Audio Generator',
+    category: 'AI & Multimedia',
+    description: 'A modern tool that transforms text into natural-sounding speech using Google Gemini AI. Features a sleek interface for managing audio generation in real-time.',
+    techStack: ['TypeScript', 'Gemini AI', 'Web Audio API'],
     links: [
-      { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
+      { label: 'GitHub Repo', url: 'https://github.com/KevSila/Text-To-Speech-Audio-Generator', type: 'github' }
     ],
-    image: '/images/book-solitude.jpg'
+    image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'UNEP Staff Portal',
+    title: 'Sample Staff Portal Project',
     category: 'System Development',
-    description: 'A Laravel & MySQL-based staff management system designed to streamline employee data, authentication, and role-based access control.',
+    description: 'A professional dashboard designed to streamline organizational workflows, serving as a centralized hub for employee data and task management.',
     techStack: ['Laravel', 'MySQL', 'Bootstrap', 'Git'],
     links: [
-      { label: 'GitHub Repo', url: 'https://github.com/KevSila/UNEP-staff-portal', type: 'github' },
-      { label: 'Documentation', url: 'https://docs.google.com/document/d/17XXWR1IgGD7LWUByKq4Es2yK9Oq7zEAtp8B1NkCGkPs/edit?usp=sharing', type: 'doc' }
+      { label: 'GitHub Repo', url: 'https://github.com/KevSila/Staff-portal', type: 'github' }
     ],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Maisha Youth Website Strategy',
-    category: 'UI/UX & Web Design',
-    description: 'Designed fully structured wireframes, prototypes, and sitemaps. Implemented SEO strategies and optimized user flow for the national movement.',
-    techStack: ['Figma', 'UI/UX', 'SEO'],
+    title: 'Attention by Design',
+    category: 'Published Book',
+    description: 'Mastering the digital patterns that shape your mind. An exploration of connection, mental health, and the impact of technology on the human psyche.',
+    techStack: ['Author', 'Social Analysis', 'Digital Ethics'],
     links: [
-      { label: 'Figma Wireframe', url: 'https://www.figma.com/design/EOfvREd0WNcb6B2IX58Px9', type: 'figma' },
-      { label: 'Figma Prototype', url: 'https://www.figma.com/design/hEER7bARHmufwmBUkH2Y2W', type: 'figma' }
+      { label: 'View Landing Page', url: 'https://ksilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&q=80&w=800'
+    image: '/images/book-solitude.jpg'
   },
   {
-    title: 'Firelit Wisdom',
+    title: 'The Firelit Mind',
     category: 'Published Book',
-    description: 'Ancient truths for modern living. A collection of insights bridging traditional wisdom with contemporary challenges.',
-    techStack: ['Author', 'Culture', 'Philosophy'],
+    description: '13 timeless principles for a life well-lived. Ancient truths for modern living, bridging traditional wisdom with contemporary challenges.',
+    techStack: ['Author', 'Philosophy', 'Personal Growth'],
     links: [
-      { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
+      { label: 'View Landing Page', url: 'https://ksilabooks.netlify.app/', type: 'live' }
     ],
     image: '/images/book-firelit.jpg'
   },
   {
-    title: 'Ads Campaign Performance',
-    category: 'Data Analytics',
-    description: 'Managed high-performance ad campaigns on Google & Meta. Optimized audience targeting and analyzed performance using Looker Studio.',
-    techStack: ['Google Ads', 'Meta Ads', 'Looker Studio'],
+    title: 'Digital Design Showcase',
+    category: 'Creative Portfolio',
+    description: 'A curated collection of visual designs and brand identity projects. This repository serves as a professional exhibition of modern UI/UX trends.',
+    techStack: ['Figma', 'React', 'Branding', 'Digital Media'],
     links: [
-      { label: 'Google Ads Report', url: 'https://docs.google.com/document/d/16aAv_Zs4N6c4OkhW46tn11BTjZX9rGA8I5VeChFQflg/edit?usp=sharing', type: 'doc' },
-      { label: 'Meta Ads Insights', url: 'https://docs.google.com/document/d/1Gr245d5y3vPOOvtKXgRKHnUcnn1s_yY2N1lnhTYXWew/edit?usp=sharing', type: 'doc' }
+      { label: 'View Designs', url: 'https://ksiladesigns.netlify.app', type: 'palette' },
+      { label: 'GitHub', url: 'https://github.com/KevSila/KevSilaDesigns', type: 'github' }
     ],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
