@@ -137,7 +137,7 @@ export const PROJECTS: Project[] = [
     description: 'A curated collection of my visual designs, freelance graphics, and brand identity projects. This portfolio highlights my work in digital media and creative direction.',
     techStack: ['Photoshop', 'Canva', 'Branding', 'Digital Media'],
     links: [
-      { label: 'View Designs', url: 'https://kevsiladesigns.netlify.app', type: 'palette' }
+      { label: 'View Designs', url: 'https://ksiladesigns.netlify.app', type: 'palette' }
     ],
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800'
   },

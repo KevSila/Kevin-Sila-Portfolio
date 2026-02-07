@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { CONTACT_INFO } from '../constants.ts';
 
 const Hero: React.FC = () => {
   return (
@@ -32,13 +33,15 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-5 pt-4">
             <a 
-              href="#projects" 
+              href={CONTACT_INFO.github}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-accent hover:bg-accentHover text-white font-bold transition-all transform hover:scale-[1.03] shadow-xl shadow-accent/20 active:scale-95"
             >
               View Projects <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a 
-              href="https://kevsiladesigns.netlify.app" 
+              href="https://ksiladesigns.netlify.app" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-accent/40 text-white font-bold transition-all"

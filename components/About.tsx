@@ -37,7 +37,7 @@ const About: React.FC = () => {
                 <h4 className="text-white font-bold text-lg mb-1">Looking for my creative work?</h4>
                 <p className="text-textDim text-sm mb-3">Explore my freelance digital media designs and brand assets.</p>
                 <a 
-                  href="https://kevsiladesigns.netlify.app" 
+                  href="https://ksiladesigns.netlify.app" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-accent font-bold text-sm hover:underline group"
