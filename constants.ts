@@ -7,7 +7,7 @@ import {
   Globe, 
   Cpu 
 } from 'lucide-react';
-import { Project, ExperienceItem, Service, SkillData } from './types';
+import { Project, ExperienceItem, Service, SkillData } from './types.ts';
 
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
@@ -81,7 +81,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Designed the organizations prototype website using Figma and orchestrated the development process.',
       'Led the integration of Google Cloud services for secure data storage across 47 county chapters.'
     ],
-    image: 'images/maisha-speaking.jpg'
+    image: 'public/images/maisha-speaking.jpg'
   },
   {
     year: 'Dec 2020 - May 2025',
@@ -93,7 +93,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Mentored members in proposal writing, leadership, and conflict resolution.',
       'Authored high-quality concept notes and reports that secured funding.'
     ],
-    image: 'images/maisha-marathon.jpg'
+    image: 'public/images/maisha-marathon.jpg'
   },
   {
     year: 'Jan 2024 - Jan 2025',
@@ -126,7 +126,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       'Acquired advanced skills in conflict resolution, peace-building, and strategic communication.',
       'Championed Peace and Climate Change initiatives as a designated Ambassador.'
     ],
-    image: 'images/gpf-certificate.jpg'
+    image: 'public/images/gpf-certificate.jpg'
   }
 ];
 
@@ -149,7 +149,7 @@ export const PROJECTS: Project[] = [
     links: [
       { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'images/book-solitude.jpg'
+    image: 'public/images/book-solitude.jpg'
   },
   {
     title: 'UNEP Staff Portal',
@@ -181,7 +181,7 @@ export const PROJECTS: Project[] = [
     links: [
       { label: 'View Book', url: 'http://kevsilabooks.netlify.app/', type: 'live' }
     ],
-    image: 'images/book-firelit.jpg'
+    image: 'public/images/book-firelit.jpg'
   },
   {
     title: 'Ads Campaign Performance',

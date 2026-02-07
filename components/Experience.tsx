@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { EXPERIENCE } from '../constants';
+import { EXPERIENCE } from '../constants.ts';
 import { Calendar } from 'lucide-react';
 
 const Experience: React.FC = () => {
@@ -12,13 +13,10 @@ const Experience: React.FC = () => {
           
           {EXPERIENCE.map((item, index) => (
             <div key={index} className="relative flex items-start md:items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-              
-              {/* Icon/Dot on Timeline */}
               <div className="flex items-center justify-center w-10 h-10 rounded-full border border-slate-600 bg-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 mt-1 md:mt-0">
                 <Calendar className="w-4 h-4 text-accent" />
               </div>
               
-              {/* Content Card */}
               <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-primary p-6 rounded-xl border border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 hover:border-slate-600">
                 <div className="flex flex-col mb-3">
                   <span className="font-bold text-white text-lg leading-tight">{item.role}</span>
@@ -45,10 +43,8 @@ const Experience: React.FC = () => {
                   </div>
                 )}
               </div>
-
             </div>
           ))}
-          
         </div>
       </div>
     </section>

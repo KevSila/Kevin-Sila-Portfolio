@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Tooltip } from 'recharts';
-import { SKILLS_DATA } from '../constants';
+import { SKILLS_DATA } from '../constants.ts';
 import { Wrench, Code, Palette, ArrowRight } from 'lucide-react';
 
 const About: React.FC = () => {
@@ -13,7 +13,6 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           
-          {/* Text Content */}
           <div className="space-y-10">
             <div>
               <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-widest">
@@ -30,7 +29,6 @@ const About: React.FC = () => {
               </p>
             </div>
 
-            {/* Design Portfolio Callout */}
             <div className="p-6 bg-accent/5 border border-accent/20 rounded-2xl flex flex-col sm:flex-row items-center gap-6 group hover:bg-accent/10 transition-colors">
               <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center shrink-0">
                 <Palette className="w-7 h-7 text-accent" />
@@ -80,7 +78,6 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Chart Content */}
           <div className="relative">
             <div className="absolute inset-0 bg-accent/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
             <div className="w-full aspect-square bg-primary/40 backdrop-blur-md rounded-3xl border border-slate-700 p-8 shadow-2xl">
@@ -112,7 +109,6 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -1,14 +1,13 @@
+
 import React from 'react';
 import { Mail, Phone, MapPin, Linkedin, Github, MessageCircle } from 'lucide-react';
-import { CONTACT_INFO } from '../constants';
+import { CONTACT_INFO } from '../constants.ts';
 
 const Contact: React.FC = () => {
   return (
     <footer id="contact" className="bg-secondary border-t border-slate-700 pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 mb-16">
-          
-          {/* CTA Section */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Let's build something <br />
@@ -36,7 +35,6 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Contact Details */}
           <div className="grid sm:grid-cols-2 gap-8">
             <div className="space-y-6">
               <div className="flex items-start">
@@ -63,8 +61,6 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-
-            {/* Socials */}
             <div>
                <h4 className="text-white font-semibold mb-4">Connect</h4>
                <div className="flex gap-4">
@@ -83,9 +79,6 @@ const Contact: React.FC = () => {
           <p className="text-slate-500 text-sm">
             © {new Date().getFullYear()} Kevin Yumbya Sila. All rights reserved. 🇰🇪
           </p>
-          <div className="flex gap-6 text-sm text-slate-500">
-             <span>Empowering brands through technology.</span>
-          </div>
         </div>
       </div>
     </footer>

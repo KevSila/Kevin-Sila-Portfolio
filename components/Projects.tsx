@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { PROJECTS } from '../constants';
+import { PROJECTS } from '../constants.ts';
 import { ExternalLink, Github, ArrowUpRight, FileText, Layout, Palette } from 'lucide-react';
 
 const Projects: React.FC = () => {
@@ -48,8 +48,6 @@ const Projects: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
             <div key={index} className="group flex flex-col h-full bg-secondary/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 hover:border-accent/40 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 overflow-hidden">
-              
-              {/* Image Container */}
               <div className="relative h-56 overflow-hidden">
                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
                 <img 
@@ -64,17 +62,13 @@ const Projects: React.FC = () => {
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-7 flex-1 flex flex-col">
                 <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-accent transition-colors tracking-tight">
                   {project.title}
                 </h3>
-
                 <p className="text-textDim mb-6 text-sm leading-relaxed flex-1">
                   {project.description}
                 </p>
-
-                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.techStack.map((tech) => (
                     <span key={tech} className="px-2.5 py-1 bg-primary border border-slate-800 rounded text-[10px] font-semibold text-slate-400 uppercase tracking-tighter">
@@ -82,8 +76,6 @@ const Projects: React.FC = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* Action Buttons */}
                 <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-800 mt-auto">
                   {project.links.map((link, i) => (
                     <a 

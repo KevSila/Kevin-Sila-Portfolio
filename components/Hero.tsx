@@ -65,23 +65,19 @@ const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Visual/Image Area */}
         <div className="relative group">
           <div className="relative w-full aspect-[4/5] max-w-md mx-auto">
-            {/* Animated Glow Backdrops */}
             <div className="absolute -inset-4 bg-gradient-to-r from-accent to-indigo-500 rounded-[2.5rem] blur opacity-20 group-hover:opacity-40 transition-opacity duration-700"></div>
             
             <div className="relative h-full w-full bg-slate-800 rounded-[2rem] overflow-hidden shadow-2xl border border-slate-700/50 transform transition-transform duration-700 group-hover:scale-[1.01] group-hover:-translate-y-1">
               <img 
-                src="images/kevin-profile.jpg" 
+                src="public/images/kevin-profile.jpg" 
                 alt="Kevin Sila" 
                 className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-700" 
               />
               
-              {/* Overlay Gradient */}
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
               
-              {/* Content Info Card */}
               <div className="absolute bottom-0 left-0 right-0 p-8 backdrop-blur-sm bg-primary/30 border-t border-slate-700/50">
                  <p className="text-white font-black text-2xl tracking-tight mb-1">Kevin Yumbya Sila</p>
                  <div className="flex items-center gap-2">
@@ -91,7 +87,6 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Floating Badge */}
             <div className="absolute -bottom-6 -right-6 md:-right-12 bg-white p-5 rounded-3xl shadow-2xl transform rotate-6 hover:rotate-0 transition-transform hidden sm:block">
                <p className="text-primary font-black text-lg leading-tight">Based in<br/><span className="text-accent">Nairobi, KE</span></p>
             </div>
