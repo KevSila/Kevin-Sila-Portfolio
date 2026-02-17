@@ -168,9 +168,9 @@ export const PROJECTS: Project[] = [
     description: 'Mastering the digital patterns that shape your mind. An exploration of connection, mental health, and the impact of technology on the human psyche.',
     techStack: ['Author', 'Social Analysis', 'Digital Ethics'],
     links: [
-      { label: 'View Landing Page', url: 'https://ksilabooks.netlify.app/', type: 'live' }
+      { label: 'View Landing Page', url: 'https://kevsilabook.netlify.app/', type: 'live' }
     ],
-    image: '/images/book-solitude.jpg'
+    image: '/images/book-attention.jpg'
   },
   {
     title: 'The Firelit Mind',
@@ -178,7 +178,7 @@ export const PROJECTS: Project[] = [
     description: '13 timeless principles for a life well-lived. Ancient truths for modern living, bridging traditional wisdom with contemporary challenges.',
     techStack: ['Author', 'Philosophy', 'Personal Growth'],
     links: [
-      { label: 'View Landing Page', url: 'https://ksilabooks.netlify.app/', type: 'live' }
+      { label: 'View Landing Page', url: 'https://kevsilabook.netlify.app/', type: 'live' }
     ],
     image: '/images/book-firelit.jpg'
   },
@@ -188,7 +188,7 @@ export const PROJECTS: Project[] = [
     description: 'A curated collection of visual designs and brand identity projects. This repository serves as a professional exhibition of modern UI/UX trends.',
     techStack: ['Figma', 'React', 'Branding', 'Digital Media'],
     links: [
-      { label: 'View Designs', url: 'https://ksiladesigns.netlify.app', type: 'palette' },
+      { label: 'View Designs', url: 'https://kevsiladesigns.netlify.app', type: 'palette' },
       { label: 'GitHub', url: 'https://github.com/KevSila/KevSilaDesigns', type: 'github' }
     ],
     image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800'

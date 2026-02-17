@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
               View Projects <ArrowRight className="ml-2 h-5 w-5" />
             </a>
             <a 
-              href="https://ksiladesigns.netlify.app" 
+              href="https://kevsiladesigns.netlify.app" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-4 rounded-2xl bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-accent/40 text-white font-bold transition-all"
