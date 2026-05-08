@@ -18,6 +18,14 @@ export interface Project {
   image: string;
 }
 
+export interface ResearchProject {
+  title: string;
+  organization: string;
+  year: string;
+  methodology: string[];
+  description: string[];
+}
+
 export interface ExperienceItem {
   year: string;
   role: string;
@@ -31,6 +39,21 @@ export interface Service {
   title: string;
   icon: LucideIcon;
   description: string;
+}
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  year: string;
+  link?: string;
+}
+
+export interface EducationItem {
+  degree: string;
+  institution: string;
+  year: string;
+  grade?: string;
+  description?: string;
 }
 
 export interface SkillData {

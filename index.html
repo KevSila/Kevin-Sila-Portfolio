@@ -4,34 +4,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Sila | Developer & Strategist</title>
-    <meta name="description" content="Portfolio of Kevin Yumbya Sila, a Nairobi-based Developer and Digital Media Strategist." />
+    <title>Kevin Yumbya Sila | Developer, AI Automation Builder & Data Analyst</title>
+    <meta name="description" content="Portfolio of Kevin Yumbya Sila — developer, AI automation builder, data analyst, and multidisciplinary technical creator based in Nairobi, Kenya." />
+    <meta name="keywords" content="Kevin Yumbya Sila, Developer, AI Automation, Data Analyst, Nairobi, Kenya, Python, React, Research" />
+    <link rel="canonical" href="https://kevsilaservices.netlify.app" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kevsilaservices.netlify.app" />
+    <meta property="og:title" content="Kevin Yumbya Sila | Developer, AI Automation Builder & Data Analyst" />
+    <meta property="og:description" content="Multidisciplinary technical creator specializing in AI tools and data systems." />
+    <meta property="og:image" content="https://kevsilaservices.netlify.app/og-image.jpg" />
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              primary: '#0f172a',
-              secondary: '#1e293b',
-              accent: '#0ea5e9',
-              accentHover: '#0284c7',
-              textLight: '#e2e8f0',
-              textDim: '#94a3b8',
+              primary: '#0a0a0a', // True black
+              secondary: '#171717', // Neutral gray 900
+              accent: '#ffffff', // Clean white accent
+              textLight: '#fafafa',
+              textDim: '#a3a3a3',
+              border: '#262626',
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
+              sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
             }
           }
         }
       }
     </script>
     <style>
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #0f172a; }
-      ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-      ::-webkit-scrollbar-thumb:hover { background: #475569; }
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: #0a0a0a; }
+      ::-webkit-scrollbar-thumb { background: #262626; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #525252; }
+      
+      html { scroll-behavior: smooth; }
+      body { overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+      
+      .tech-border {
+        border: 1px solid #262626;
+      }
+      .tech-dashed-border {
+        border: 1px dashed #262626;
+      }
+      .tech-border:hover {
+        border-color: #525252;
+      }
+      .code-font {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+      
+      /* Subtle noise overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        opacity: 0.02;
+        pointer-events: none;
+        z-index: 9999;
+      }
     </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Kevin Yumbya Sila",
+      "url": "https://kevsilaservices.netlify.app",
+      "jobTitle": "Developer & AI Automation Consultant",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Nairobi",
+        "addressCountry": "Kenya"
+      },
+      "sameAs": [
+        "https://linkedin.com/in/kevin-sila-9143b618a/",
+        "https://github.com/kevsila"
+      ],
+      "description": "Developer and Digital Systems Strategist specializing in AI automation, SEO, and scalable web solutions."
+    }
+    </script>
+
     <!-- Apollo Tracker -->
     <script>function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
     o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,

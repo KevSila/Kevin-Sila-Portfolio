@@ -1,97 +1,74 @@
 
 import React from 'react';
+import { motion } from 'motion/react';
+import { Github, ExternalLink } from 'lucide-react';
 import { PROJECTS } from '../constants.ts';
-import { ExternalLink, Github, ArrowUpRight, FileText, Layout, Palette } from 'lucide-react';
 
 const Projects: React.FC = () => {
-  const getIcon = (type: string) => {
-    switch (type) {
-      case 'github': return <Github className="w-4 h-4" />;
-      case 'figma': return <Layout className="w-4 h-4" />;
-      case 'doc': return <FileText className="w-4 h-4" />;
-      case 'live': return <ExternalLink className="w-4 h-4" />;
-      case 'palette': return <Palette className="w-4 h-4" />;
-      default: return <ExternalLink className="w-4 h-4" />;
-    }
-  };
-
-  const getButtonClass = (type: string) => {
-    switch (type) {
-      case 'github': return 'bg-slate-800 text-white hover:bg-slate-700';
-      case 'figma': return 'bg-purple-900/30 text-purple-200 border-purple-800 hover:bg-purple-900/50';
-      case 'doc': return 'bg-blue-900/30 text-blue-200 border-blue-800 hover:bg-blue-900/50';
-      case 'palette': return 'bg-accent/20 text-accent border-accent/30 hover:bg-accent/40';
-      default: return 'bg-primary text-slate-300 hover:text-white hover:bg-slate-700';
-    }
-  };
-
   return (
-    <section id="projects" className="py-24 bg-primary relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-          <div>
-            <div className="inline-block px-3 py-1 mb-4 rounded-full bg-accent/10 border border-accent/20 text-accent text-xs font-bold uppercase tracking-widest">
-              My Portfolio
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
-              Featured <span className="text-accent">Projects</span>
-            </h2>
-            <p className="text-textDim max-w-xl text-lg leading-relaxed">
-              A comprehensive showcase of my work spanning web development, creative design, and strategic research.
-            </p>
+    <section id="projects" className="py-24 bg-primary px-6">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+          <div className="space-y-3">
+            <h2 className="text-white text-[10px] font-bold uppercase tracking-[0.2em] opacity-40">Engineering</h2>
+            <h3 className="text-white text-3xl md:text-5xl font-bold tracking-tight">Technical Projects</h3>
           </div>
-          <a href="https://github.com/kevsila" target="_blank" rel="noopener noreferrer" className="group text-accent hover:text-white flex items-center gap-2 transition-all font-medium">
-            Explore GitHub <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </a>
+          <p className="text-textDim text-xs max-w-xs leading-relaxed opacity-70">
+            Internal systems, AI integrations, and structural implementations built with modern stacks.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {PROJECTS.map((project, index) => (
-            <div key={index} className="group flex flex-col h-full bg-secondary/50 backdrop-blur-sm rounded-2xl border border-slate-700/50 hover:border-accent/40 transition-all duration-500 hover:shadow-2xl hover:shadow-accent/10 overflow-hidden">
-              <div className="relative h-56 overflow-hidden">
-                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
+            <motion.div
+              key={project.title}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group tech-border rounded-sm bg-neutral-900/40 p-6 flex flex-col hover:bg-neutral-900/60 transition-colors"
+            >
+              <div className="mb-6 overflow-hidden rounded-sm h-48 bg-neutral-800">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className="w-full h-full object-cover transform scale-100 group-hover:scale-110 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
                 />
-                <div className="absolute top-4 left-4 z-20">
-                  <span className="px-3 py-1.5 bg-primary/80 backdrop-blur-lg rounded-lg text-[10px] font-bold text-accent uppercase tracking-wider border border-slate-700">
-                    {project.category}
-                  </span>
-                </div>
               </div>
 
-              <div className="p-7 flex-1 flex flex-col">
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-accent transition-colors tracking-tight">
-                  {project.title}
-                </h3>
-                <p className="text-textDim mb-6 text-sm leading-relaxed flex-1">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {project.techStack.map((tech) => (
-                    <span key={tech} className="px-2.5 py-1 bg-primary border border-slate-800 rounded text-[10px] font-semibold text-slate-400 uppercase tracking-tighter">
+              <div className="flex-1 space-y-4">
+                <div className="space-y-2">
+                  <span className="text-accent text-[10px] font-bold uppercase tracking-widest">{project.category}</span>
+                  <h4 className="text-white text-xl font-bold">{project.title}</h4>
+                  <p className="text-textDim text-xs leading-relaxed line-clamp-3">
+                    {project.description}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-2 pt-2">
+                  {project.techStack.map(tech => (
+                    <span key={tech} className="text-textDim text-[9px] font-bold uppercase tracking-widest px-2 py-1 bg-white/5 rounded-sm">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-800 mt-auto">
-                  {project.links.map((link, i) => (
-                    <a 
-                      key={i} 
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold border border-transparent transition-all shadow-sm active:scale-95 ${getButtonClass(link.type)}`}
-                    >
-                      {getIcon(link.type)}
-                      {link.label}
-                    </a>
-                  ))}
-                </div>
               </div>
-            </div>
+
+              <div className="flex items-center gap-4 mt-8 pt-6 border-t border-white/5">
+                {project.links.map(link => (
+                  <a 
+                    key={link.label} 
+                    href={link.url} 
+                    target="_blank" 
+                    rel="noreferrer"
+                    className="flex items-center gap-2 text-white text-[10px] font-bold uppercase tracking-widest hover:opacity-70 transition-opacity"
+                  >
+                    {link.type === 'github' ? <Github size={14} /> : <ExternalLink size={14} />}
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>

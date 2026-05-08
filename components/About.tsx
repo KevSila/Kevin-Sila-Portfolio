@@ -1,113 +1,127 @@
 
 import React from 'react';
-import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Tooltip } from 'recharts';
-import { SKILLS_DATA } from '../constants.ts';
-import { Wrench, Code, Palette, ArrowRight } from 'lucide-react';
+import { motion } from 'motion/react';
+import { TECHNICAL_STACK, EDUCATION, CURRENTLY_EXPLORING } from '../constants.ts';
 
 const About: React.FC = () => {
-  const designTools = ['Figma', 'Adobe XD', 'Canva', 'Photoshop', 'WordPress', 'Elementor'];
-  const devSkills = ['Python', 'JavaScript', 'SQL', 'PHP', 'Laravel', 'React', 'Tailwind CSS'];
-
   return (
-    <section id="about" className="py-24 bg-secondary/20 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
-          
-          <div className="space-y-10">
-            <div>
-              <div className="inline-block px-3 py-1 mb-4 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-widest">
-                The Story So Far
+    <section id="about" className="py-24 bg-primary px-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-12 gap-12 items-start">
+          <div className="md:col-span-8 space-y-12">
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h2 className="text-white text-3xl font-bold tracking-tight uppercase tracking-[0.2em] text-xs">Background</h2>
+              <div className="space-y-6 text-textDim text-lg leading-relaxed">
+                <p>
+                  With a <span className="text-white">B.Sc. in Mathematics and Computer Science</span> from Kenyatta University, my approach to development is rooted in algorithmic logic and systems thinking.
+                </p>
+                <p>
+                  I specialize in the implementation of data research and technical tools. Whether processing national health expenditures or building AI-driven productivity software, my focus is on <span className="text-white">building architectures that solve real-world operational problems.</span>
+                </p>
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Architecting Digital <span className="text-accent">Experiences</span>
-              </h2>
-              <p className="text-textDim text-lg leading-relaxed mb-6">
-                With a dual background in Mathematics and Computer Science, I bridge the gap between logical architecture and creative visual storytelling. My approach is data-driven yet user-centric.
-              </p>
-              <p className="text-textDim leading-relaxed">
-                Currently focused on building scalable web solutions and crafting cohesive brand identities. Beyond the screen, I lead community initiatives that leverage technology for social good, mentoring the next generation of digital leaders in Kenya.
-              </p>
-            </div>
+            </motion.div>
 
-            <div className="p-6 bg-accent/5 border border-accent/20 rounded-2xl flex flex-col sm:flex-row items-center gap-6 group hover:bg-accent/10 transition-colors">
-              <div className="w-14 h-14 bg-accent/20 rounded-xl flex items-center justify-center shrink-0">
-                <Palette className="w-7 h-7 text-accent" />
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            >
+              <div className="space-y-2">
+                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">Systems Development</h4>
+                <p className="text-textDim text-xs leading-relaxed">Building scalable web applications with a focus on performant structure and clean logic.</p>
               </div>
-              <div className="flex-1 text-center sm:text-left">
-                <h4 className="text-white font-bold text-lg mb-1">Looking for my creative work?</h4>
-                <p className="text-textDim text-sm mb-3">Explore my freelance digital media designs and brand assets.</p>
-                <a 
-                  href="https://kevsiladesigns.netlify.app" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-accent font-bold text-sm hover:underline group"
-                >
-                  Visit Design Portfolio <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
+              <div className="space-y-2">
+                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">AI & Automation</h4>
+                <p className="text-textDim text-xs leading-relaxed">Developing custom pipelines and intelligent helpers to automate manual technical workflows.</p>
               </div>
-            </div>
+              <div className="space-y-2">
+                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">Data Research</h4>
+                <p className="text-textDim text-xs leading-relaxed">Coordinating large-scale data collection and financial disaggregation using industry standards.</p>
+              </div>
+              <div className="space-y-2">
+                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">Digital Operations</h4>
+                <p className="text-textDim text-xs leading-relaxed">Building communication systems and search-optimized web platforms with measurable goals.</p>
+              </div>
+            </motion.div>
 
-            <div className="grid grid-cols-2 gap-6">
-              <div>
-                <div className="flex items-center gap-2 mb-4 text-white font-bold">
-                  <Wrench className="w-5 h-5 text-accent" />
-                  <span>Design Toolkit</span>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="space-y-8"
+            >
+              <h2 className="text-white text-3xl font-bold tracking-tight uppercase tracking-[0.2em] text-xs">Technical Stack</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+                <div>
+                  <h4 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50">Languages</h4>
+                  <div className="flex flex-col gap-1">
+                    {TECHNICAL_STACK.languages.map(lang => (
+                      <span key={lang} className="text-textDim text-sm font-mono">{lang}</span>
+                    ))}
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {designTools.map((tool) => (
-                    <span key={tool} className="px-3 py-1 bg-slate-800/50 border border-slate-700/50 rounded-lg text-xs text-slate-400">
-                      {tool}
-                    </span>
-                  ))}
+                <div>
+                  <h4 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50">Frameworks</h4>
+                  <div className="flex flex-col gap-1">
+                    {TECHNICAL_STACK.frameworks.map(fw => (
+                      <span key={fw} className="text-textDim text-sm font-mono">{fw}</span>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50">Tools & Analytics</h4>
+                  <div className="flex flex-col gap-1">
+                    {TECHNICAL_STACK.dataResearch.map(tool => (
+                      <span key={tool} className="text-textDim text-sm font-mono">{tool}</span>
+                    ))}
+                  </div>
                 </div>
               </div>
-
-              <div>
-                <div className="flex items-center gap-2 mb-4 text-white font-bold">
-                  <Code className="w-5 h-5 text-accent" />
-                  <span>Tech Stack</span>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  {devSkills.map((skill) => (
-                    <span key={skill} className="px-3 py-1 bg-slate-800/50 border border-slate-700/50 rounded-lg text-xs text-slate-400">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="relative">
-            <div className="absolute inset-0 bg-accent/10 rounded-full blur-[100px] -z-10 animate-pulse"></div>
-            <div className="w-full aspect-square bg-primary/40 backdrop-blur-md rounded-3xl border border-slate-700 p-8 shadow-2xl">
-              <h3 className="text-center text-xl font-bold text-white mb-6 uppercase tracking-widest text-sm opacity-60">Skill Proficiency Index</h3>
-              <ResponsiveContainer width="100%" height="85%">
-                <RadarChart cx="50%" cy="50%" outerRadius="80%" data={SKILLS_DATA}>
-                  <PolarGrid stroke="#334155" />
-                  <PolarAngleAxis dataKey="subject" tick={{ fill: '#94a3b8', fontSize: 11, fontWeight: 500 }} />
-                  <PolarRadiusAxis angle={30} domain={[0, 100]} stroke="none" />
-                  <Radar
-                    name="Kevin's Skills"
-                    dataKey="A"
-                    stroke="#0ea5e9"
-                    strokeWidth={3}
-                    fill="#0ea5e9"
-                    fillOpacity={0.2}
-                  />
-                  <Tooltip 
-                    contentStyle={{ backgroundColor: '#0f172a', borderRadius: '12px', border: '1px solid #1e293b', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
-                    itemStyle={{ color: '#0ea5e9', fontSize: '12px' }}
-                  />
-                </RadarChart>
-              </ResponsiveContainer>
-              <div className="mt-4 flex justify-center gap-6">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-accent"></div>
-                  <span className="text-[10px] text-textDim uppercase font-bold tracking-tighter">Core Competency</span>
+          <div className="md:col-span-4 space-y-12">
+             <div className="p-6 border border-white/5 bg-white/[0.02] rounded-sm">
+                <h3 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50 tracking-[0.2em]">Education</h3>
+                <div className="space-y-8">
+                  {EDUCATION.map((edu, idx) => (
+                    <div key={idx} className="space-y-2 border-l border-white/10 pl-4 py-1">
+                      <p className="text-white font-medium text-sm leading-tight">{edu.degree}</p>
+                      <p className="text-textDim text-xs">{edu.institution}</p>
+                      <div className="flex justify-between items-center pt-1 font-mono text-[9px] opacity-70">
+                        <span className="text-accent">{edu.grade}</span>
+                        <span className="text-textDim">{edu.year.split(' ').pop()}</span>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-            </div>
+             </div>
+
+             <div className="p-6 border border-white/5 bg-white/[0.02] rounded-sm space-y-4">
+                <h3 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50 tracking-[0.2em]">Currently Exploring</h3>
+                <div className="flex flex-wrap gap-2">
+                  {CURRENTLY_EXPLORING.map((item, idx) => (
+                    <span key={idx} className="text-[10px] font-mono text-textDim py-1 px-2 bg-white/5 rounded-full border border-white/5">
+                      {item}
+                    </span>
+                  ))}
+                </div>
+             </div>
+
+             <div className="p-6 border border-white/5 bg-white/[0.02] rounded-sm space-y-4">
+                <h3 className="text-white text-[10px] font-bold uppercase tracking-widest mb-2 opacity-50 tracking-[0.2em]">Philosophy</h3>
+                <p className="text-textDim text-xs leading-relaxed font-serif italic opacity-80">
+                  "Systemic clarity follows the subtraction of the unnecessary."
+                </p>
+             </div>
           </div>
         </div>
       </div>

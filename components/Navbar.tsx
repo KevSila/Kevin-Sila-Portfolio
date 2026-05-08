@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Terminal } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../constants.ts';
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,57 +17,62 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 backdrop-blur-md shadow-lg py-4 border-b border-slate-800' : 'bg-transparent py-6'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center">
-          <a href="#home" className="flex items-center gap-2 group">
-            <div className="bg-accent p-2 rounded-lg group-hover:bg-accentHover transition-colors">
-              <Terminal className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-xl font-bold tracking-tight text-white">
-              Kevin<span className="text-accent">Sila</span>
-            </span>
-          </a>
-
-          <div className="hidden md:flex space-x-8">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-textDim hover:text-white hover:text-accent transition-colors duration-200 text-sm font-medium uppercase tracking-wider py-2"
-              >
-                {link.name}
-              </a>
-            ))}
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-primary/95 backdrop-blur-sm border-b border-border py-4' : 'bg-transparent py-6'}`}>
+      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+        <a href="#home" className="flex items-center gap-3">
+          <div className="w-8 h-8 bg-accent flex items-center justify-center rounded-sm">
+            <span className="text-primary font-black text-[10px] leading-none">KS</span>
           </div>
+          <span className="text-white font-bold tracking-tight text-sm uppercase">Kevin Sila</span>
+        </a>
 
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-textDim hover:text-white focus:outline-none p-2"
+        {/* Desktop Navigation */}
+        <div className="hidden md:flex items-center gap-8">
+          {NAV_LINKS.map((link) => (
+            <a 
+              key={link.name} 
+              href={link.href} 
+              className="text-textDim hover:text-white transition-colors text-[10px] font-bold uppercase tracking-[0.2em]"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-          </div>
+              {link.name}
+            </a>
+          ))}
+          <a 
+            href="#contact" 
+            className="px-4 py-2 bg-white text-black text-[10px] font-bold uppercase tracking-[0.2em] rounded-sm hover:bg-neutral-200 transition-colors"
+          >
+            Connect
+          </a>
         </div>
+
+        {/* Mobile Toggle */}
+        <button className="md:hidden text-white" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+          {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+        </button>
       </div>
 
-      {isOpen && (
-        <div className="md:hidden bg-secondary border-t border-slate-700 absolute w-full shadow-2xl">
-          <div className="px-4 pt-4 pb-6 space-y-2">
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="absolute top-full left-0 w-full bg-primary border-b border-border p-6 md:hidden flex flex-col gap-5 items-center"
+          >
             {NAV_LINKS.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 rounded-lg text-base font-medium text-textLight hover:bg-slate-700 hover:text-accent transition-colors"
+              <a 
+                key={link.name} 
+                href={link.href} 
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-textDim hover:text-white text-[10px] font-bold uppercase tracking-[0.2em]"
               >
                 {link.name}
               </a>
             ))}
-          </div>
-        </div>
-      )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

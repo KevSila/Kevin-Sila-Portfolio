@@ -1,35 +1,47 @@
 
 import React from 'react';
+import { motion } from 'motion/react';
+import { ExternalLink } from 'lucide-react';
 import { EXPERIENCE } from '../constants.ts';
-import { Calendar, ArrowUpRight } from 'lucide-react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-secondary/30">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">Professional Journey</h2>
-        
-        <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-600 before:to-transparent">
-          
+    <section id="experience" className="py-24 bg-primary px-6">
+      <div className="max-w-4xl mx-auto">
+        <div className="space-y-4 mb-20">
+          <h2 className="text-white text-[10px] font-bold uppercase tracking-[0.2em] opacity-50">Career Timeline</h2>
+          <h3 className="text-white text-3xl md:text-5xl font-bold tracking-tight">Technical Track</h3>
+        </div>
+
+        <div className="space-y-16">
           {EXPERIENCE.map((item, index) => (
-            <div key={index} className="relative flex items-start md:items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border border-slate-600 bg-primary shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10 mt-1 md:mt-0">
-                <Calendar className="w-4 h-4 text-accent" />
-              </div>
+            <motion.div
+              key={item.company}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="relative pl-8 border-l border-white/5"
+            >
+              <div className="absolute left-[-5px] top-0 w-[9px] h-[9px] bg-accent rounded-full shadow-[0_0_10px_rgba(56,189,248,0.5)]" />
               
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-primary p-6 rounded-xl border border-slate-700 shadow-sm hover:shadow-md transition-all duration-300 hover:border-slate-600">
-                <div className="flex flex-col mb-3">
-                  <span className="font-bold text-white text-lg leading-tight">{item.role}</span>
-                  {item.company && <span className="text-accent text-sm font-medium mt-1">{item.company}</span>}
+              <div className="space-y-6">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-2">
+                  <div className="space-y-1">
+                    <h4 className="text-white text-xl font-bold">{item.role}</h4>
+                    <p className="text-accent text-sm font-bold uppercase tracking-widest">{item.company}</p>
+                  </div>
+                  <span className="text-textDim text-xs font-mono uppercase tracking-widest bg-white/5 px-3 py-1 rounded-sm">
+                    {item.year}
+                  </span>
                 </div>
-                
-                <time className="block mb-4 text-xs font-medium uppercase text-textDim tracking-widest bg-slate-800/50 w-fit px-2 py-1 rounded">
-                  {item.year}
-                </time>
-                
-                <ul className="list-disc list-outside pl-4 space-y-2 mb-4">
+
+                <ul className="space-y-4">
                   {item.description.map((desc, i) => (
-                    <li key={i} className="text-slate-400 text-sm leading-relaxed">{desc}</li>
+                    <li key={i} className="text-textDim text-sm leading-relaxed flex gap-3">
+                      <span className="text-accent/40 font-mono mt-1 text-[10px]">{String(i + 1).padStart(2, '0')}</span>
+                      {desc}
+                    </li>
                   ))}
                 </ul>
 
@@ -37,25 +49,15 @@ const Experience: React.FC = () => {
                   <a 
                     href={item.link.url}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-accent text-sm font-bold hover:text-white transition-colors mb-4 group/link"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-white text-[10px] font-bold uppercase tracking-widest hover:text-accent transition-colors"
                   >
-                    {item.link.label} 
-                    <ArrowUpRight className="w-4 h-4 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
+                    <ExternalLink size={14} />
+                    {item.link.label}
                   </a>
                 )}
-
-                {item.image && (
-                  <div className="mt-4 rounded-lg overflow-hidden border border-slate-700/50 group-hover:border-accent/30 transition-colors">
-                    <img 
-                      src={item.image} 
-                      alt={`Highlight from ${item.company}`} 
-                      className="w-full h-48 object-cover transform hover:scale-105 transition-transform duration-700"
-                    />
-                  </div>
-                )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
