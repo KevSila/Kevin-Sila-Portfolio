@@ -33,14 +33,13 @@ export const SKILLS_DATA: SkillData[] = [
 
 export const TECHNICAL_STACK = {
   languages: ['Python', 'JavaScript', 'TypeScript', 'PHP', 'SQL', 'C++'],
-  frameworks: ['React', 'Next.js', 'Laravel', 'Tailwind', 'Node.js'],
+  frameworks: ['React', 'Next.js', 'Laravel', 'Tailwind', 'Node.js', 'Bootstrap'],
   aiTools: ['Google AI Studio', 'Gemini API', 'CrewAI', 'Manus', 'Opal', 'Web Audio API'],
   dataResearch: [
     'ODK (Open Data Kit)', 
     'NASA Methodology', 
     'Tableau / Power BI', 
     'Looker Studio', 
-    'SPSS', 
     'Figma', 
     'Google Cloud Integration',
     'Advanced Excel'
@@ -139,20 +138,32 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: 'Fellow - President\'s Fellowship Program',
     company: 'Global Peace Foundation Kenya',
     description: [
-      'Selected as Machakos County representative for a leadership and mentorship program.',
-      'Acquired advanced skills in leadership, community engagement, and peace-building initiatives.',
-      'Spearheaded the development of a regional initiative dashboard for tracking impact metrics.'
+      'Selected as the Machakos County representative for this prestigious leadership and mentorship initiative.',
+      'Acquired advanced skills in conflict resolution, strategic communication, and community peace-building.',
+      'Strengthened capabilities in project management and partnership-building as a designated Foundation Ambassador.',
+      'Represented the chapter in national forums, advocating for youth-led health and community interventions.'
+    ]
+  },
+  {
+    year: '2022 - 2025',
+    role: 'Information Technology Lead',
+    company: 'Maisha Youth Movement (National)',
+    description: [
+      'Spearheaded the integration and adoption of Google Cloud services across 47 chapters for secure and accessible data storage.',
+      'Designed and launched the movement\'s website, creating wireframes and prototypes in Figma and managing the budget.',
+      'Led the Digital Media Committee, overseeing strategy creation and creating a comprehensive branding style guide.',
+      'Automated organizational workflows and data transcription projects to digitize historical health records.'
     ]
   },
   {
     year: '2020 - 2025',
-    role: 'Chairperson & IT Lead',
-    company: 'Maisha Youth Movement',
+    role: 'Chairperson',
+    company: 'Maisha Youth - Machakos Chapter',
     description: [
-      'Led digital transformation by migrating 47 chapters to cloud-based data accessibility.',
-      'Managed nationwide data collection using ODK and Google Forms for 5,000+ respondents.',
-      'Authored concept notes and grant proposals for technical and health advocacy projects.',
-      'Developed the organization\'s primary website and internal communication architecture.'
+      'Led 500+ members in youth-focused health awareness initiatives and community engagement programs.',
+      'Drafted comprehensive county work plans, budgets, and event strategies aligned with national health goals.',
+      'Managed coordinated partnerships with regional stakeholders to amplify the impact of community health programs.',
+      'Mentored youth members in project planning, proposal writing, and organizational leadership.'
     ]
   },
   {
@@ -160,9 +171,10 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: 'Assistant Manager & IT Associate',
     company: 'Equavo Limited',
     description: [
-      'Built automated inventory and production tracking systems using SQL and Advanced Excel.',
-      'Reduced reporting overhead by 40% through precise production metric dashboards.',
-      'Managed technical support and internal data integrity for factory operations.'
+      'Built automated fruit inventory and production tracking systems using Advanced Excel and SQL.',
+      'Developed quality control metrics dashboards for tracking FFA levels, Dry Matter, and Moisture Loss.',
+      'Optimized weekly and monthly wage payment processes, improving accuracy and reducing overhead.',
+      'Streamlined warehouse operations and technical workflows through integrated data management solutions.'
     ]
   },
   {
@@ -293,6 +305,21 @@ export const CERTIFICATIONS: Certification[] = [
     title: 'Business Analysis Foundations',
     issuer: 'LinkedIn Learning',
     year: '2022'
+  },
+  {
+    title: 'SQL for Data Analysis',
+    issuer: 'Udacity / LinkedIn',
+    year: '2022'
+  },
+  {
+    title: 'Google Analytics Individual Qualification',
+    issuer: 'Google',
+    year: '2023'
+  },
+  {
+    title: 'Power BI Dashboard Visualization',
+    issuer: 'Microsoft / Coursera',
+    year: '2023'
   },
   {
     title: 'ICDL Profile Certificate',

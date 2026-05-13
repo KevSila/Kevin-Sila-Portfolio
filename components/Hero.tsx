@@ -17,13 +17,13 @@ const Hero: React.FC = () => {
               Kevin <br /> Yumbya Sila
             </h1>
             <p className="text-textDim text-lg md:text-2xl font-medium max-w-2xl leading-relaxed">
-              Developer — AI Automation Builder — Data & Research Analyst
+              Mathematician — Developer — Data & Research Analyst
             </p>
           </div>
           
           <div className="max-w-2xl">
             <p className="text-textDim text-base md:text-lg leading-relaxed">
-              Developer and systems-focused problem solver building AI workflows, digital tools, research systems, and automation solutions across development, analytics, and operational strategy.
+              Bridging algorithmic logic with practical engineering to build AI workflows, research systems, and automation solutions across development, analytics, and operational strategy.
             </p>
           </div>
 
