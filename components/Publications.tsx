@@ -1,16 +1,15 @@
-
 import React from 'react';
 import { motion } from 'motion/react';
-import { BookOpen, ArrowRight } from 'lucide-react';
+import { BookOpen, ArrowUpRight } from 'lucide-react';
 import { PUBLICATIONS } from '../constants.ts';
 
 const Publications: React.FC = () => {
   return (
-    <section className="py-24 bg-primary px-6 border-t border-white/5">
+    <section id="publications" className="py-20 bg-primary px-6 border-t border-border/40">
       <div className="max-w-4xl mx-auto">
         <div className="space-y-4 mb-20 text-center">
-          <h2 className="text-white text-[10px] font-bold uppercase tracking-[0.2em] opacity-50">Publications</h2>
-          <h3 className="text-white text-3xl md:text-5xl font-bold tracking-tight">Writing & Philosophy</h3>
+          <h2 className="text-textMuted text-[10px] font-medium uppercase tracking-[0.20em]">Publications</h2>
+          <h2 className="text-white text-3xl md:text-4xl font-semibold tracking-tight">Writing & Philosophy</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -23,21 +22,21 @@ const Publications: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group tech-border p-8 block hover:bg-neutral-900/40 transition-colors"
+              transition={{ delay: index * 0.08, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+              className="group border border-border/45 p-8 block bg-white/[0.01] hover:border-border/80 hover:bg-white/[0.02] transition-colors rounded-[2px]"
             >
               <div className="space-y-6">
                 <div className="flex justify-between items-start">
-                  <div className="p-3 bg-white/5 rounded-sm group-hover:bg-accent/10 group-hover:text-accent transition-colors">
-                    <BookOpen size={20} />
+                  <div className="p-2.5 bg-white/5 rounded-[2px] text-white opacity-80 group-hover:bg-white/10 group-hover:text-white transition-colors">
+                    <BookOpen size={16} />
                   </div>
-                  <ArrowRight size={16} className="text-white opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <ArrowUpRight size={14} className="text-white opacity-40 group-hover:opacity-100 transition-opacity" />
                 </div>
                 
                 <div className="space-y-2">
-                  <span className="text-accent text-[10px] font-bold uppercase tracking-widest">{pub.category}</span>
-                  <h4 className="text-white text-xl font-bold">{pub.title}</h4>
-                  <p className="text-textDim text-sm leading-relaxed">
+                  <span className="text-white text-[10px] font-semibold uppercase tracking-widest opacity-75">{pub.category}</span>
+                  <h4 className="text-white text-lg font-medium tracking-tight">{pub.title}</h4>
+                  <p className="text-textDim text-sm leading-relaxed font-light opacity-95">
                     {pub.description}
                   </p>
                 </div>

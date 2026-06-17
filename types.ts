@@ -26,6 +26,30 @@ export interface ResearchProject {
   description: string[];
 }
 
+export interface ResearchSystem {
+  title: string;
+  role: string;
+  year: string;
+  toolsMethods: string[];
+  scope: string;
+  impact: string;
+  tags: string[];
+}
+
+export interface ImpactArea {
+  id: string;
+  title: string;
+  description: string;
+  cards: {
+    title: string;
+    role?: string;
+    organizations?: string;
+    year?: string;
+    details?: string;
+    tags: string[];
+  }[];
+}
+
 export interface ExperienceItem {
   year: string;
   role: string;

@@ -1,129 +1,114 @@
-
 import React from 'react';
 import { motion } from 'motion/react';
-import { TECHNICAL_STACK, EDUCATION, CURRENTLY_EXPLORING } from '../constants.ts';
+import { BRANDING, CATEGORIZED_SKILLS, EDUCATION } from '../constants.ts';
+import { Check, GraduationCap } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-primary px-6">
-      <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-12 gap-12 items-start">
-          <div className="md:col-span-8 space-y-12">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <h2 className="text-white text-3xl font-bold tracking-tight uppercase tracking-[0.2em] text-xs">Background</h2>
-              <div className="space-y-6 text-textDim text-lg leading-relaxed">
-                <p>
-                  With a <span className="text-white">B.Sc. in Mathematics and Computer Science</span> from Kenyatta University, my approach to development is rooted in algorithmic logic and systems thinking.
-                </p>
-                <p>
-                  I specialize in the implementation of data research and technical tools. Whether processing national health expenditures or building AI-driven productivity software, my focus is on <span className="text-white">building architectures that solve real-world operational problems.</span>
-                </p>
-              </div>
-            </motion.div>
+    <section id="about" className="py-20 bg-primary px-6 border-t border-border/40">
+      <div className="max-w-7xl mx-auto space-y-20">
+        
+        {/* Section Header */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-border/20 pb-8">
+          <div className="space-y-3">
+            <h2 className="text-textMuted text-[10px] font-medium uppercase tracking-[0.25em]">Biography</h2>
+            <h3 className="text-white text-3xl md:text-4xl font-semibold tracking-tight">About Me</h3>
+          </div>
+          <p className="text-textDim text-xs md:text-sm max-w-sm leading-relaxed opacity-95 font-light">
+            A systems coordinator and builder turning complexity into operational clarity.
+          </p>
+        </div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="grid grid-cols-1 sm:grid-cols-2 gap-6"
-            >
-              <div className="space-y-2">
-                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">Systems Development</h4>
-                <p className="text-textDim text-xs leading-relaxed">Building scalable web applications with a focus on performant structure and clean logic.</p>
-              </div>
-              <div className="space-y-2">
-                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">AI & Automation</h4>
-                <p className="text-textDim text-xs leading-relaxed">Developing custom pipelines and intelligent helpers to automate manual technical workflows.</p>
-              </div>
-              <div className="space-y-2">
-                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">Data Research</h4>
-                <p className="text-textDim text-xs leading-relaxed">Coordinating large-scale data collection and financial disaggregation using industry standards.</p>
-              </div>
-              <div className="space-y-2">
-                <h4 className="text-white text-[10px] font-bold uppercase tracking-widest text-accent">Digital Operations</h4>
-                <p className="text-textDim text-xs leading-relaxed">Building communication systems and search-optimized web platforms with measurable goals.</p>
-              </div>
-            </motion.div>
+        {/* Narrative & Identity Column Grid */}
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
+          
+          {/* Detailed Biography & Core Identity Bullets (col-span-8) */}
+          <div className="lg:col-span-8 space-y-12">
+            
+            <div className="space-y-6 text-textDim text-sm md:text-base leading-relaxed opacity-95">
+              <p className="text-white text-lg font-light tracking-normal leading-relaxed">
+                {BRANDING.aboutText1}
+              </p>
+              <p className="font-light">
+                {BRANDING.aboutText2}
+              </p>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-              className="space-y-8"
-            >
-              <h2 className="text-white text-3xl font-bold tracking-tight uppercase tracking-[0.2em] text-xs">Technical Stack</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-                <div>
-                  <h4 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50">Languages</h4>
-                  <div className="flex flex-col gap-1">
-                    {TECHNICAL_STACK.languages.map(lang => (
-                      <span key={lang} className="text-textDim text-sm font-mono">{lang}</span>
-                    ))}
+            {/* Core Identity Bullet Points */}
+            <div className="space-y-5">
+              <h4 className="text-white text-[11px] font-semibold uppercase tracking-[0.2em]">Core Identity</h4>
+              <div className="grid md:grid-cols-2 gap-4">
+                {BRANDING.coreIdentity.map((item) => (
+                  <div key={item} className="flex items-center gap-3.5 p-4 bg-white/[0.01] border border-border/40 rounded-[2px] transition-colors hover:bg-white/[0.02] hover:border-border/80">
+                    <div className="w-5 h-5 rounded-full bg-white/5 flex items-center justify-center text-white/70">
+                      <Check size={11} />
+                    </div>
+                    <span className="text-white text-xs font-medium tracking-wide opacity-90">{item}</span>
                   </div>
-                </div>
-                <div>
-                  <h4 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50">Frameworks</h4>
-                  <div className="flex flex-col gap-1">
-                    {TECHNICAL_STACK.frameworks.map(fw => (
-                      <span key={fw} className="text-textDim text-sm font-mono">{fw}</span>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <h4 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50">Tools & Analytics</h4>
-                  <div className="flex flex-col gap-1">
-                    {TECHNICAL_STACK.dataResearch.map(tool => (
-                      <span key={tool} className="text-textDim text-sm font-mono">{tool}</span>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
-            </motion.div>
+            </div>
+
           </div>
 
-          <div className="md:col-span-4 space-y-12">
-             <div className="p-6 border border-white/5 bg-white/[0.02] rounded-sm">
-                <h3 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50 tracking-[0.2em]">Education</h3>
-                <div className="space-y-8">
-                  {EDUCATION.map((edu, idx) => (
-                    <div key={idx} className="space-y-2 border-l border-white/10 pl-4 py-1">
-                      <p className="text-white font-medium text-sm leading-tight">{edu.degree}</p>
-                      <p className="text-textDim text-xs">{edu.institution}</p>
-                      <div className="flex justify-between items-center pt-1 font-mono text-[9px] opacity-70">
-                        <span className="text-accent">{edu.grade}</span>
-                        <span className="text-textDim">{edu.year.split(' ').pop()}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-             </div>
+          {/* Education Sidebar Panel (col-span-4) */}
+          <div className="lg:col-span-4 space-y-6 bg-white/[0.01] p-8 border border-border/40 rounded-[2px]">
+            <div className="flex items-center gap-3 text-white pb-4 border-b border-border/20">
+              <GraduationCap size={16} className="opacity-80" />
+              <h4 className="text-white text-xs font-semibold uppercase tracking-[0.2em]">Education</h4>
+            </div>
 
-             <div className="p-6 border border-white/5 bg-white/[0.02] rounded-sm space-y-4">
-                <h3 className="text-white text-[10px] font-bold uppercase tracking-widest mb-4 opacity-50 tracking-[0.2em]">Currently Exploring</h3>
+            <div className="space-y-6">
+              {EDUCATION.map((edu) => (
+                <div key={edu.degree} className="space-y-2">
+                  <span className="text-textMuted text-[9px] font-mono whitespace-nowrap bg-white/5 px-2.5 py-0.5 rounded-[2px] border border-border/40">
+                    {edu.year}
+                  </span>
+                  <h5 className="text-white text-sm font-medium leading-normal pt-1">{edu.degree}</h5>
+                  <p className="text-textDim text-xs leading-snug font-light">{edu.institution}</p>
+                  {edu.grade && (
+                    <p className="text-xs text-white opacity-80 font-normal">{edu.grade}</p>
+                  )}
+                  {edu.description && (
+                    <p className="text-textMuted text-[10.5px] leading-relaxed font-light">
+                      {edu.description}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+        </div>
+
+        {/* Organized Skills Grid */}
+        <div className="space-y-8 pt-12 border-t border-border/20">
+          <div className="space-y-2">
+            <h4 className="text-textMuted text-[10px] font-medium uppercase tracking-[0.2em]">Competencies</h4>
+            <h5 className="text-white text-xl md:text-2xl font-semibold tracking-tight">Structured Domain Skills</h5>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {CATEGORIZED_SKILLS.map((cat) => (
+              <div key={cat.category} className="p-6 bg-white/[0.01] hover:bg-white/[0.02] border border-border/45 rounded-[2px] transition-all space-y-4">
+                <span className="text-white text-[10px] font-semibold uppercase tracking-widest block border-b border-border/20 pb-2.5 opacity-90">
+                  {cat.category}
+                </span>
                 <div className="flex flex-wrap gap-2">
-                  {CURRENTLY_EXPLORING.map((item, idx) => (
-                    <span key={idx} className="text-[10px] font-mono text-textDim py-1 px-2 bg-white/5 rounded-full border border-white/5">
-                      {item}
+                  {cat.skills.map((skill) => (
+                    <span 
+                      key={skill}
+                      className="text-[10px] font-mono text-textDim px-2.5 py-1 bg-white/[0.02] rounded-[2px] border border-border/40 hover:border-border hover:text-white transition-colors"
+                    >
+                      {skill}
                     </span>
                   ))}
                 </div>
-             </div>
-
-             <div className="p-6 border border-white/5 bg-white/[0.02] rounded-sm space-y-4">
-                <h3 className="text-white text-[10px] font-bold uppercase tracking-widest mb-2 opacity-50 tracking-[0.2em]">Philosophy</h3>
-                <p className="text-textDim text-xs leading-relaxed font-serif italic opacity-80">
-                  "Systemic clarity follows the subtraction of the unnecessary."
-                </p>
-             </div>
+              </div>
+            ))}
           </div>
         </div>
+
       </div>
     </section>
   );
