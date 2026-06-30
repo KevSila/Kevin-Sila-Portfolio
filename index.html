@@ -27,13 +27,14 @@
         theme: {
           extend: {
             colors: {
-              primary: '#0a0a0a', // True black
-              secondary: '#121212', // Slightly softer black card backgrounds
-              accent: '#ffffff', // Clean white accent
-              textLight: '#EAEAEA',
-              textDim: '#B8B8B8',
-              textMuted: '#8A8A8A',
-              border: '#1e1e1e', // Elegant hairline border
+              primary: 'var(--bg-primary)',
+              secondary: 'var(--bg-secondary)',
+              accent: 'var(--accent)',
+              accentSoft: 'var(--accent-soft)',
+              textLight: 'var(--text-light)',
+              textDim: 'var(--text-dim)',
+              textMuted: 'var(--text-muted)',
+              border: 'var(--border)',
             },
             fontFamily: {
               sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
@@ -44,24 +45,52 @@
       }
     </script>
     <style>
+      :root {
+        --bg-primary: #050505; /* Deep rich dark background */
+        --bg-secondary: #0b0b0b; /* Card background in dark mode */
+        --text-light: #ffffff; /* Headings and highlight text */
+        --text-dim: #d1d5db; /* Body/charcoal text */
+        --text-muted: #9ca3af; /* Muted text */
+        --border: rgba(255, 255, 255, 0.12); /* Subtle borders */
+        --accent: #ffffff;
+        --accent-soft: rgba(255, 255, 255, 0.08);
+        --scrollbar-track: #050505;
+        --scrollbar-thumb: #222222;
+        --noise-opacity: 0.02;
+      }
+
+      html.light {
+        --bg-primary: #f8fafc; /* Premium soft off-white slate background */
+        --bg-secondary: #ffffff; /* Pure white for cards and key areas */
+        --text-light: #0f172a; /* Dark navy/charcoal headings for maximum contrast */
+        --text-dim: #334155; /* Highly readable charcoal grey for body text */
+        --text-muted: #64748b; /* Medium slate gray for muted texts */
+        --border: #cbd5e1; /* Clear and visible but elegant light-gray border */
+        --accent: #0f172a; /* Premium dark slate accent */
+        --accent-soft: #f1f5f9; /* Soft background tint */
+        --scrollbar-track: #f8fafc;
+        --scrollbar-thumb: #cbd5e1;
+        --noise-opacity: 0.01;
+      }
+
       ::-webkit-scrollbar { width: 5px; }
-      ::-webkit-scrollbar-track { background: #0a0a0a; }
-      ::-webkit-scrollbar-thumb { background: #262626; border-radius: 10px; }
+      ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+      ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 10px; }
       ::-webkit-scrollbar-thumb:hover { background: #525252; }
       
       html { scroll-behavior: smooth; }
       body { overflow-x: hidden; -webkit-font-smoothing: antialiased; }
       
       .tech-border {
-        border: 1px solid #1c1c1c;
+        border: 1px solid var(--border);
         transition: border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       }
       .tech-dashed-border {
-        border: 1px dashed #222222;
+        border: 1px dashed var(--border);
         transition: border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       }
       .tech-border:hover {
-        border-color: #2e2e2e;
+        border-color: var(--accent);
         transform: translateY(-2px);
       }
       .code-font {
@@ -77,7 +106,7 @@
         width: 100%;
         height: 100%;
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-        opacity: 0.02;
+        opacity: var(--noise-opacity);
         pointer-events: none;
         z-index: 9999;
       }

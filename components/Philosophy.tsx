@@ -4,7 +4,7 @@ import { BRANDING } from '../constants.ts';
 
 const Philosophy: React.FC = () => {
   return (
-    <section id="approach" className="pt-16 pb-20 bg-primary px-6 relative overflow-hidden border-t border-white/[0.02]">
+    <section id="approach" className="pt-16 pb-20 bg-primary px-6 relative overflow-hidden border-t border-border/30">
       <motion.div 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -16,17 +16,17 @@ const Philosophy: React.FC = () => {
         {/* Section Label */}
         <div className="space-y-3">
           <h2 className="text-textMuted text-[10px] font-medium uppercase tracking-[0.25em]">Guiding Principle</h2>
-          <h3 className="text-white text-xl md:text-2xl font-semibold tracking-tight">My Approach</h3>
+          <h3 className="text-textLight text-xl md:text-2xl font-semibold tracking-tight">My Approach</h3>
         </div>
 
         {/* Large Aesthetic Quote - Calmer, airier, and highly elegant */}
-        <div className="max-w-3xl mx-auto py-10 px-4 border-y border-border/10">
+        <div className="max-w-3xl mx-auto py-10 px-4 border-y border-border/40">
           <motion.p 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="text-white text-2xl md:text-4xl font-light tracking-wide leading-relaxed italic opacity-95"
+            className="text-textLight text-2xl md:text-4xl font-light tracking-wide leading-relaxed italic opacity-95"
           >
             "{BRANDING.philosophyQuote}"
           </motion.p>
@@ -39,9 +39,9 @@ const Philosophy: React.FC = () => {
 
         {/* Decorative Grid Marker */}
         <div className="flex justify-center gap-2 selection:bg-transparent pt-2">
-          <span className="w-1 h-1 bg-white/20 rounded-full" />
-          <span className="w-1.5 h-1.5 bg-white/45 rounded-full" />
-          <span className="w-1 h-1 bg-white/20 rounded-full" />
+          <span className="w-1 h-1 bg-textLight/20 rounded-full" />
+          <span className="w-1.5 h-1.5 bg-textLight/45 rounded-full" />
+          <span className="w-1 h-1 bg-textLight/20 rounded-full" />
         </div>
 
       </motion.div>

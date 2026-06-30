@@ -4,12 +4,15 @@ import Navbar from './components/Navbar.tsx';
 import Hero from './components/Hero.tsx';
 import Philosophy from './components/Philosophy.tsx';
 import About from './components/About.tsx';
+import Services from './components/Services.tsx';
 import ImpactAreas from './components/ImpactAreas.tsx';
 import Research from './components/Research.tsx';
 import Experience from './components/Experience.tsx';
 import Projects from './components/Projects.tsx';
 import Publications from './components/Publications.tsx';
 import Certifications from './components/Certifications.tsx';
+import Silatech from './components/Silatech.tsx';
+import Engagement from './components/Engagement.tsx';
 import Contact from './components/Contact.tsx';
 
 function App() {
@@ -41,6 +44,9 @@ function App() {
         {/* Personal Biography & Core Identifiers & Competencies */}
         <About />
         
+        {/* Services & Engagement Areas */}
+        <Services />
+        
         {/* Dynamic Multi-Tab Impact Areas Mapping */}
         <ImpactAreas />
         
@@ -58,6 +64,12 @@ function App() {
         
         {/* Literary Publications & Thought Leadership */}
         <Publications />
+
+        {/* Consulting Platform Showcase */}
+        <Silatech />
+
+        {/* Procurement & Vendor Readiness Models */}
+        <Engagement />
       </main>
       
       {/* Direct Communication & Collaboration Footer */}

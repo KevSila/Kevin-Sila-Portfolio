@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { NAV_LINKS } from '../constants.ts';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [theme, setTheme] = useState<'dark' | 'light'>(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') return 'light';
+      return 'dark';
+    }
+    return 'dark';
+  });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +23,18 @@ const Navbar: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (theme === 'light') {
+      document.documentElement.classList.add('light');
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light');
+      localStorage.setItem('theme', 'dark');
+    }
+  }, [theme]);
 
   useEffect(() => {
     const sectionIds = NAV_LINKS.map(link => link.href.replace('#', ''));
@@ -58,6 +78,10 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+  };
+
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled 
@@ -73,7 +97,7 @@ const Navbar: React.FC = () => {
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-9 lg:gap-11">
+        <div className="hidden md:flex items-center gap-7 lg:gap-9">
           {NAV_LINKS.map((link) => {
             const isActive = activeSection === link.href.replace('#', '');
             return (
@@ -82,37 +106,58 @@ const Navbar: React.FC = () => {
                 href={link.href} 
                 onClick={(e) => handleClick(e, link.href)}
                 className={`relative py-1 cursor-pointer transition-colors duration-200 text-[10px] font-medium uppercase tracking-[0.2em] ${
-                  isActive ? 'text-white' : 'text-textDim hover:text-white'
+                  isActive ? 'text-textLight' : 'text-textDim hover:text-textLight'
                 }`}
               >
                 {link.name}
                 {isActive && (
                   <motion.div 
                     layoutId="activeNavUnderline"
-                    className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-white origin-left"
+                    className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-accent origin-left"
                     transition={{ type: 'spring', stiffness: 350, damping: 32 }}
                   />
                 )}
               </a>
             );
           })}
+          
+          {/* Theme Toggle Button */}
+          <button 
+            onClick={toggleTheme}
+            className="p-1.5 text-textDim hover:text-textLight transition-colors focus:outline-none rounded-[2px] border border-transparent hover:border-border/60"
+            title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+            aria-label="Toggle Theme"
+          >
+            {theme === 'light' ? <Moon size={13} /> : <Sun size={13} />}
+          </button>
+
           <a 
             href="#contact" 
             onClick={(e) => handleClick(e, '#contact')}
-            className="px-4 py-1.5 bg-white text-black text-[10px] font-bold uppercase tracking-[0.2em] rounded-[2px] hover:bg-neutral-200 active:scale-98 transition-all shadow-[0_1px_3px_rgba(0,0,0,0.1)]"
+            className="px-4 py-1.5 bg-accent text-primary text-[10px] font-bold uppercase tracking-[0.2em] rounded-[2px] hover:bg-accent/90 active:scale-98 transition-all shadow-[0_1px_3px_rgba(0,0,0,0.1)]"
           >
             Connect
           </a>
         </div>
 
-        {/* Mobile Toggle */}
-        <button 
-          aria-label="Toggle Menu"
-          className="md:hidden text-white/80 hover:text-white/100 transition-colors p-1" 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
-        </button>
+        {/* Mobile Toggle & Theme button */}
+        <div className="flex items-center gap-3 md:hidden">
+          <button 
+            onClick={toggleTheme}
+            className="p-1.5 text-textDim hover:text-textLight transition-colors focus:outline-none rounded-[2px]"
+            aria-label="Toggle Theme"
+          >
+            {theme === 'light' ? <Moon size={14} /> : <Sun size={14} />}
+          </button>
+          
+          <button 
+            aria-label="Toggle Menu"
+            className="text-textLight hover:text-accent transition-colors p-1" 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -132,7 +177,7 @@ const Navbar: React.FC = () => {
                   href={link.href} 
                   onClick={(e) => handleClick(e, link.href)}
                   className={`text-[10px] font-medium uppercase tracking-[0.2em] transition-colors py-1 ${
-                    isActive ? 'text-white border-b border-white' : 'text-textDim hover:text-white'
+                    isActive ? 'text-textLight border-b border-textLight' : 'text-textDim hover:text-textLight'
                   }`}
                 >
                   {link.name}

@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
                 <span className="w-1.5 h-1.5 bg-accent rounded-full animate-pulse" />
                 <span className="text-textDim text-[9px] font-medium uppercase tracking-[0.25em]">Available for Engagements</span>
               </div>
-              <h1 className="text-white text-5xl md:text-8xl font-bold tracking-tighter leading-[0.95] select-none">
+              <h1 className="text-textLight text-5xl md:text-8xl font-bold tracking-tighter leading-[0.95] select-none">
                 {BRANDING.name}
               </h1>
               <p className="text-textDim text-xs md:text-sm font-light uppercase tracking-[0.18em] leading-relaxed max-w-4xl pt-1">
@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
 
             {/* Core Statements */}
             <div className="space-y-5 max-w-3xl">
-              <h2 className="text-white text-xl md:text-2xl font-normal leading-relaxed tracking-tight text-white/95">
+              <h2 className="text-textLight text-xl md:text-2xl font-normal leading-relaxed tracking-tight">
                 {BRANDING.heroStatement}
               </h2>
               <p className="text-textDim text-sm md:text-base leading-relaxed opacity-90 font-light">
@@ -127,16 +127,17 @@ const Hero: React.FC = () => {
             {/* Domain Pills */}
             <div className="flex flex-wrap gap-2 pt-2">
               {[
-                'Research & Data Systems',
+                'ICT & Website Support',
+                'Research & Evidence Systems',
                 'AI & Automation',
-                'Digital Transformation',
-                'Community Leadership',
-                'Operations & Business Intelligence',
+                'Data & Dashboards',
+                'Digital Media & Campaigns',
+                'Youth & Community Programs',
                 'Strategy & Documentation'
               ].map((domain) => (
                 <span 
                   key={domain} 
-                  className="px-3.5 py-1.5 bg-white/[0.02] border border-white/5 rounded-[2px] text-textDim hover:border-accent/15 hover:text-white transition-all text-[9.5px] font-medium uppercase tracking-widest"
+                  className="px-3.5 py-1.5 bg-secondary border border-border/80 rounded-[2px] text-textDim hover:border-accent hover:text-textLight transition-all text-[9.5px] font-medium uppercase tracking-widest"
                 >
                   {domain}
                 </span>
@@ -148,7 +149,7 @@ const Hero: React.FC = () => {
               <a 
                 href="#impact-areas" 
                 onClick={(e) => handleClick(e, '#impact-areas')}
-                className="group inline-flex items-center gap-2.5 px-8 py-3.5 bg-white text-black text-[10px] font-bold uppercase tracking-[0.2em] rounded-[2px] transition-all hover:bg-neutral-100 active:scale-98 shadow-[0_1px_3px_rgba(255,255,255,0.05)]"
+                className="group inline-flex items-center gap-2.5 px-8 py-3.5 bg-accent text-primary text-[10px] font-bold uppercase tracking-[0.2em] rounded-[2px] transition-all hover:opacity-90 active:scale-98 shadow-[0_1px_3px_rgba(0,0,0,0.1)]"
               >
                 View Impact Areas
                 <ArrowRight size={13} className="group-hover:translate-x-1 transition-transform" />
@@ -158,7 +159,7 @@ const Hero: React.FC = () => {
                 href={CONTACT_INFO.github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 bg-white/[0.03] hover:bg-white/[0.06] text-textLight text-[10px] font-bold uppercase tracking-[0.2em] rounded-[2px] transition-all border border-border"
+                className="inline-flex items-center gap-2 px-6 py-3.5 bg-accentSoft hover:bg-accentSoft/80 text-textLight text-[10px] font-bold uppercase tracking-[0.2em] rounded-[2px] transition-all border border-border"
               >
                 <Github size={13} />
                 View GitHub
@@ -173,7 +174,7 @@ const Hero: React.FC = () => {
               <div className="absolute inset-1 border border-dashed border-border/40 rounded-sm" />
               <div className="absolute w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-pulse" />
               <div className="text-center space-y-2 p-8 z-10 selection:bg-transparent">
-                <span className="text-[10px] uppercase font-mono tracking-[0.3em] text-white/55 font-normal">SYSTEMS CLARITY</span>
+                <span className="text-[10px] uppercase font-mono tracking-[0.3em] text-textLight/60 font-normal">SYSTEMS CLARITY</span>
                 <p className="text-xs text-textMuted italic leading-relaxed opacity-80">"Systemic clarity follows the subtraction of the unnecessary."</p>
               </div>
             </div>
@@ -196,9 +197,9 @@ const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={isMetricsVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: idx * 0.08, duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="group space-y-2 p-5 bg-white/[0.01] hover:bg-white/[0.02] border border-border/40 hover:border-border rounded-[2px] transition-all"
+              className="group space-y-2 p-5 bg-secondary border border-border/40 hover:border-border rounded-[2px] transition-all"
             >
-              <div className="text-white text-3xl font-bold tracking-tight group-hover:text-white transition-colors flex items-baseline gap-1">
+              <div className="text-textLight text-3xl font-bold tracking-tight group-hover:text-accent transition-colors flex items-baseline gap-1">
                 <Counter targetValue={metric.value} start={isMetricsVisible} />
               </div>
               <p className="text-textLight text-[10px] font-medium uppercase tracking-widest leading-snug">

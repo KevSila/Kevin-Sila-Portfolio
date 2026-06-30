@@ -16,6 +16,7 @@ import { Project, ExperienceItem, Service, Certification, EducationItem, ImpactA
 export const NAV_LINKS = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
+  { name: 'Services', href: '#services' },
   { name: 'Impact Areas', href: '#impact-areas' },
   { name: 'Research Systems', href: '#research-systems' },
   { name: 'Projects', href: '#projects' },
@@ -27,17 +28,18 @@ export const NAV_LINKS = [
 
 export const BRANDING = {
   name: 'Kevin Yumbya Sila',
-  title: 'Systems Builder • Research & Data Professional • AI & Digital Transformation Specialist',
+  title: 'Systems Builder • ICT & Digital Transformation Consultant • Research & Data Professional',
   heroStatement: 'Bridging research, technology, leadership, and operations to build systems that create measurable impact.',
-  heroDescription: 'I work at the intersection of data, public health research, AI automation, digital transformation, community leadership, and business operations. My strength is turning complex problems into structured systems that people can understand, use, and improve.',
+  heroDescription: 'I work at the intersection of ICT, research, data systems, AI automation, digital media, public health programs, and operational intelligence. I help organizations turn scattered information, manual workflows, and communication gaps into structured systems that support better reporting, decision-making, service delivery, and measurable impact.',
   philosophyQuote: 'Systemic clarity follows the subtraction of the unnecessary.',
   philosophySupport: 'I believe technology should simplify complexity, research should inform action, and leadership should empower people. Whether I am building AI systems, coordinating national surveys, improving business workflows, or leading community initiatives, my focus remains the same: create systems that help people make better decisions.',
-  aboutText1: 'I am a multidisciplinary technology, research, and operations professional with a B.Sc. in Mathematics and Computer Science from Kenyatta University. My work spans public health research, data analytics, digital transformation, AI automation, IT operations, business intelligence, community leadership, and strategic documentation.',
-  aboutText2: 'I have supported national-level research initiatives, led field teams, built digital workflows, managed operational reporting systems, developed proposals and concept notes, and created AI-powered tools. My career is connected by one theme: building practical systems that turn complexity into clarity.',
+  aboutText1: 'I am a multidisciplinary ICT, research, data, and operations professional with a B.Sc. in Mathematics and Computer Science from Kenyatta University. My work spans public health research, field coordination, data systems, website development, digital media strategy, AI automation, business intelligence, youth programming, and strategic documentation.',
+  aboutText2: 'I have supported national-level research initiatives, led field teams, built digital workflows, managed operational reporting systems, developed websites and digital assets, supported paid campaign tracking, and created AI-powered tools and prototypes. My career is connected by one theme: building practical systems that turn complexity into clarity.',
   coreIdentity: [
-    'Systems thinker',
+    'ICT and digital systems practitioner',
     'Research coordinator',
     'AI and automation builder',
+    'Website and digital media support professional',
     'Digital transformation practitioner',
     'Community leader',
     'Technical communicator',
@@ -56,28 +58,45 @@ export const METRICS = [
 
 export const CATEGORIZED_SKILLS = [
   {
-    category: 'Research & Data',
-    skills: ['ODK', 'Google Forms', 'Microsoft Forms', 'Qualitative Research', 'Quantitative Research', 'Mixed Methods', 'Data Collection', 'Data Cleaning', 'Data Validation', 'Research Reporting', 'MEL']
+    category: 'ICT & Website Support',
+    skills: [
+      'WordPress', 'Divi', 'Elementor', 'Google Sites', 'Wix', 'Netlify', 
+      'Website Maintenance', 'SEO', 'Google Analytics', 'Search Console', 
+      'Domain/Hosting Basics', 'Google Workspace', 'Forms', 'Sheets', 'Drive'
+    ]
   },
   {
-    category: 'Analytics',
-    skills: ['Excel (Advanced)', 'SQL', 'Power BI', 'Tableau', 'Looker Studio', 'Data Visualization', 'Dashboarding']
-  },
-  {
-    category: 'Development',
-    skills: ['React', 'TypeScript', 'JavaScript', 'PHP', 'Laravel', 'MySQL', 'HTML', 'CSS', 'Tailwind', 'Bootstrap']
+    category: 'Digital Media & Campaigns',
+    skills: [
+      'Digital Media Strategy', 'Content Calendars', 'Canva', 'Social Media Graphics', 
+      'Google Ads', 'Meta Ads', 'Facebook Ads Manager', 'Campaign Reporting', 
+      'Google Business Profile', 'SEO Content'
+    ]
   },
   {
     category: 'AI & Automation',
-    skills: ['Gemini API', 'Google AI Studio', 'AI Workflows', 'WhatsApp Automation', 'CRM Automation', 'Reporting Automation']
+    skills: [
+      'Google AI Studio', 'Gemini API', 'ChatGPT', 'AI-assisted Development', 
+      'Codex-style Coding Support', 'AI Workflows', 'WhatsApp Automation Concepts', 
+      'CRM Automation', 'Reporting Automation', 'Google Apps Script', 'Make/n8n Concepts', 'Airtable'
+    ]
   },
   {
-    category: 'Digital Strategy',
-    skills: ['WordPress', 'Divi', 'Elementor', 'Wix', 'Google Sites', 'SEO', 'Google Ads', 'Meta Ads', 'Facebook Ads Manager', 'GoHighLevel']
+    category: 'Research & Data',
+    skills: [
+      'ODK', 'Kobo/ODK-style Tools', 'Google Forms', 'Microsoft Forms', 
+      'Qualitative Research', 'Quantitative Research', 'Mixed Methods', 
+      'Data Collection', 'Data Cleaning', 'Data Validation', 'MEL/M&E', 'Excel', 'SQL', 
+      'Power BI', 'Looker Studio', 'Tableau'
+    ]
   },
   {
-    category: 'Leadership & Strategy',
-    skills: ['Team Leadership', 'Stakeholder Engagement', 'Proposal Writing', 'Concept Notes', 'Budgeting', 'Work Plans', 'Report Writing', 'Strategic Communication', 'Training', 'Mentorship']
+    category: 'Strategy & Documentation',
+    skills: [
+      'Concept Notes', 'Project Proposals', 'Budgets', 'Work Plans', 
+      'Monitoring Reports', 'Research Reports', 'Technical Documentation', 
+      'Training Materials', 'SOPs', 'Digital Strategy Documents', 'Brand Style Guides'
+    ]
   }
 ];
 
@@ -114,16 +133,55 @@ export const IMPACT_AREAS: ImpactArea[] = [
     ]
   },
   {
+    id: 'ict-websites-media',
+    title: 'ICT, Websites & Digital Media',
+    description: 'I support organizations with practical ICT services, websites, digital media, paid campaigns, communication assets, and digital tools that improve visibility, engagement, lead capture, reporting, and service delivery.',
+    cards: [
+      {
+        title: 'Website & Digital Platform Support',
+        role: 'Website & Digital Platform Assistant',
+        organizations: 'Christine Campbell Rapin',
+        year: '2025',
+        details: 'Managed and updated WordPress website assets using Divi, supported page edits, CSS fixes, mobile responsiveness improvements, SEO checks, site audits, and funnel integrations through GoHighLevel/Actionera. Helped improve the connection between website presence, lead capture, and user journey.',
+        tags: ['WordPress', 'Divi', 'CSS', 'SEO', 'Website Maintenance', 'Mobile Responsiveness', 'GoHighLevel', 'Lead Funnels', 'Digital Platform Support']
+      },
+      {
+        title: 'Website, SEO & Digital Presence Projects',
+        role: 'Developer & Digital Strategist',
+        organizations: 'K-Sila Services / Personal Projects',
+        year: '2024 - Present',
+        details: 'Built and maintained digital presence projects including portfolio websites, landing pages, book landing pages, design showcases, and service websites. Applied SEO, responsive design, analytics thinking, and content structure to support visibility and lead generation.',
+        tags: ['Website Development', 'Landing Pages', 'SEO', 'Google Sites', 'Wix', 'WordPress', 'Netlify', 'Responsive Design', 'Portfolio Websites', 'Analytics']
+      },
+      {
+        title: 'Digital Media & Paid Campaign Support',
+        role: 'Digital Media Strategist / Campaign Support',
+        organizations: 'K-Sila Services / Personal Projects',
+        year: '2023 - Present',
+        details: 'Supported digital media strategy, social media planning, content structures, Google Ads, Meta Ads, campaign tracking, and performance reporting. Developed content calendars, digital media style guides, and communication assets for awareness, visibility, and engagement.',
+        tags: ['Digital Media Strategy', 'Google Ads', 'Meta Ads', 'Facebook Ads Manager', 'Campaign Reporting', 'Content Calendars', 'Social Media Strategy', 'Google Analytics', 'SEO', 'Communication Assets']
+      },
+      {
+        title: 'Canva-Based Communication Design',
+        role: 'Design Support / Communication Assets',
+        organizations: 'K-Sila Services / Personal Projects',
+        year: 'Active',
+        details: 'Create and adapt Canva-based visual communication assets such as posters, flyers, social media graphics, presentation decks, infographics, and campaign materials. This supports program communication, social media visibility, awareness activities, and business branding.',
+        tags: ['Canva', 'Posters', 'Flyers', 'Social Media Graphics', 'Presentation Decks', 'Infographics', 'Communication Design', 'Brand Assets', 'Campaign Materials']
+      }
+    ]
+  },
+  {
     id: 'ai-automation',
     title: 'AI & Automation',
-    description: 'I build and experiment with AI-powered systems that reduce manual work, improve decision-making, and support productivity.',
+    description: 'I build and prototype AI-powered systems that reduce manual work, improve follow-up, summarize information, support productivity, and help organizations make better decisions. I use AI tools such as Gemini, Google AI Studio, ChatGPT, and AI coding assistants to prototype systems, write code faster, structure workflows, generate documentation, and test automation ideas.',
     cards: [
       {
         title: 'AI Job Application Assistant',
         role: 'Developer & Integrator',
         organizations: 'GitHub: Job-application-assistant',
         year: '2024',
-        details: 'An AI-powered career optimization suite built with React, TypeScript, Tailwind CSS, and Google Gemini API. It automates the generation of ATS-optimized CVs, cover letters, and tailored application responses.',
+        details: 'An AI-powered career optimization suite built with React, TypeScript, Tailwind CSS, and Google Gemini API. It analyzes job descriptions and supports the generation of ATS-aligned CVs, cover letters, and application responses.',
         tags: ['React', 'TypeScript', 'Tailwind', 'Gemini API', 'ATS', 'Automation', 'Productivity']
       },
       {
@@ -131,7 +189,7 @@ export const IMPACT_AREAS: ImpactArea[] = [
         role: 'Developer & Integrator',
         organizations: 'GitHub: Text-To-Speech-Audio-Generator',
         year: '2024',
-        details: 'A web-based tool that transforms text into natural-sounding speech using Google Gemini AI and the Web Audio API. It demonstrates AI-powered multimedia generation and user-friendly audio interaction.',
+        details: 'A web-based tool that transforms text into natural-sounding speech using Google Gemini AI and the Web Audio API. It demonstrates AI-powered multimedia generation and browser-based interaction.',
         tags: ['TypeScript', 'Gemini AI', 'Web Audio API', 'Text-to-Speech', 'Multimedia']
       },
       {
@@ -163,23 +221,23 @@ export const IMPACT_AREAS: ImpactArea[] = [
   {
     id: 'digital-transformation',
     title: 'Digital Transformation',
-    description: 'I help organizations adopt digital tools, improve workflows, and create systems for communication, reporting, and collaboration.',
+    description: 'I help organizations adopt digital tools, improve workflows, organize information, and create systems for communication, reporting, collaboration, and decision-making.',
     cards: [
       {
         title: 'Maisha Youth Movement National Digital Operations',
         role: 'Information Technology Lead',
         organizations: 'Maisha Youth Movement (National)',
         year: '2022 - 2025',
-        details: 'Supported digital transformation across 47 county chapters. Led Google Cloud/Google Workspace adoption. Developed digital forms, reporting systems, and membership data collection processes. Designed website prototypes in Figma. Supported digital media strategy, SEO, reporting, cloud storage, and workflow improvement.',
-        tags: ['Google Cloud', 'Digital Transformation', '47 Counties', 'Figma', 'Reporting Systems', 'Youth Programs']
+        details: 'Supported digital transformation across 47 county chapters. Led Google Cloud / Google Workspace adoption. Developed digital reporting systems, membership data collection forms, and automated workflows. Designed website prototypes in Figma. Supported digital media strategy, SEO, cloud storage, and backup structures, improving overall organizational workflow.',
+        tags: ['Google Cloud', 'Digital Transformation', '47 Counties', 'Figma', 'Reporting Systems', 'Youth Programs', 'Workflows']
       },
       {
         title: 'Christine Campbell Rapin Digital Platform Support',
         role: 'Website & Digital Platform Assistant',
         organizations: 'Christine Campbell Rapin — Business Mentor & Strategist',
         year: '2025',
-        details: 'Managed WordPress infrastructure using Divi. Integrated GoHighLevel/Actionera funnels. Performed SEO audits, mobile responsiveness checks, CSS fixes, and site optimization to drive user journey from lead capture to conversion.',
-        tags: ['WordPress', 'Divi', 'GoHighLevel', 'SEO', 'CSS', 'Digital Platform Support']
+        details: 'Managed WordPress infrastructure using Divi. Integrated GoHighLevel / Actionera lead capture and conversion funnels. Performed SEO audits, mobile responsiveness checks, CSS fixes, and website optimization to drive user journey from lead capture to conversion.',
+        tags: ['WordPress', 'Divi', 'GoHighLevel', 'SEO Audits', 'CSS Fixes', 'Website Optimization', 'Lead Capture']
       }
     ]
   },
@@ -410,14 +468,34 @@ export const PROJECTS: Project[] = [
     image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Staff-portal',
-    category: 'Systems Automation',
-    description: 'A professional internal-facing staff management system designed to streamline employee data, authentication workflows, task management, and administrative reporting.',
-    techStack: ['Laravel', 'MySQL', 'PHP', 'Bootstrap'],
+    title: 'Silatech Growth Partners Service Platform',
+    category: 'SME & NGO Consultancy',
+    description: 'A consulting service website presenting AI-enabled operational systems, business intelligence, workflow automation, dashboards, client intake systems, and digital transformation services for SMEs, NGOs, and growing organizations.',
+    techStack: ['Service Website', 'Digital Strategy', 'AI Systems', 'Operational Intelligence', 'Lead Capture', 'Netlify'],
     links: [
-      { label: 'Source', url: 'https://github.com/KevSila/Staff-portal', type: 'github' }
+      { label: 'Live Showcase', url: 'https://kevsilaservices.netlify.app', type: 'live' }
+    ],
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    title: 'Google Workspace Reporting System Concept',
+    category: 'Systems Automation',
+    description: 'A lightweight reporting system concept using Google Forms, Google Sheets, Apps Script, and dashboards to help programs collect activity reports, summarize performance, and support leadership decision-making.',
+    techStack: ['Google Forms', 'Google Sheets', 'Apps Script', 'Reporting', 'Dashboards', 'M&E'],
+    links: [
+      { label: 'Source', url: 'https://github.com/KevSila', type: 'github' }
     ],
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
+  },
+  {
+    title: 'WhatsApp Lead Capture + CRM Concept',
+    category: 'SME Systems',
+    description: 'A business workflow concept for capturing WhatsApp or form-based inquiries, organizing leads in a CRM-lite database, generating follow-up reminders, and supporting owner visibility through dashboards.',
+    techStack: ['WhatsApp Business', 'CRM', 'Lead Capture', 'Follow-Up', 'Automation', 'SME Systems'],
+    links: [
+      { label: 'Source', url: 'https://github.com/KevSila', type: 'github' }
+    ],
+    image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800'
   },
   {
     title: 'Text-To-Speech-Audio-Generator',
