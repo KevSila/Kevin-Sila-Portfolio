@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kevsilaportfolio.netlify.app/sitemap.xml
