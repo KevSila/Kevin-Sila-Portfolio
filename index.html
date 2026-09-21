@@ -1,20 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin Yumbya Sila | Developer, AI Automation Builder & Data Analyst</title>
-    <meta name="description" content="Portfolio of Kevin Yumbya Sila — developer, AI automation builder, data analyst, and multidisciplinary technical creator based in Nairobi, Kenya." />
-    <meta name="keywords" content="Kevin Yumbya Sila, Developer, AI Automation, Data Analyst, Nairobi, Kenya, Python, React, Research" />
-    <link rel="canonical" href="https://kevsilaservices.netlify.app" />
 
-    <!-- Open Graph / Facebook -->
+    <title>Kevin Yumbya Sila | Business Systems & AI Consultant</title>
+    <meta
+      name="description"
+      content="Kevin Yumbya Sila is a Nairobi-based ICT, research and data professional building business systems, AI workflows, dashboards and digital solutions."
+    />
+    <meta name="author" content="Kevin Yumbya Sila" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="theme-color" content="#050505" />
+
+    <link rel="canonical" href="https://kevsilaportfolio.netlify.app/" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://kevsilaservices.netlify.app" />
-    <meta property="og:title" content="Kevin Yumbya Sila | Developer, AI Automation Builder & Data Analyst" />
-    <meta property="og:description" content="Multidisciplinary technical creator specializing in AI tools and data systems." />
-    <meta property="og:image" content="https://kevsilaservices.netlify.app/og-image.jpg" />
+    <meta property="og:site_name" content="Kevin Yumbya Sila Portfolio" />
+    <meta property="og:url" content="https://kevsilaportfolio.netlify.app/" />
+    <meta property="og:title" content="Kevin Yumbya Sila | Business Systems & AI Consultant" />
+    <meta
+      property="og:description"
+      content="ICT, research and data professional building business systems, AI workflows, dashboards and digital solutions."
+    />
+    <meta property="og:locale" content="en_KE" />
+
+    <!-- X / Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Kevin Yumbya Sila | Business Systems & AI Consultant" />
+    <meta
+      name="twitter:description"
+      content="ICT, research and data professional building business systems, AI workflows, dashboards and digital solutions."
+    />
 
     <!-- Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,12 +66,12 @@
     </script>
     <style>
       :root {
-        --bg-primary: #050505; /* Deep rich dark background */
-        --bg-secondary: #0b0b0b; /* Card background in dark mode */
-        --text-light: #ffffff; /* Headings and highlight text */
-        --text-dim: #d1d5db; /* Body/charcoal text */
-        --text-muted: #9ca3af; /* Muted text */
-        --border: rgba(255, 255, 255, 0.12); /* Subtle borders */
+        --bg-primary: #050505;
+        --bg-secondary: #0b0b0b;
+        --text-light: #ffffff;
+        --text-dim: #d1d5db;
+        --text-muted: #9ca3af;
+        --border: rgba(255, 255, 255, 0.12);
         --accent: #ffffff;
         --accent-soft: rgba(255, 255, 255, 0.08);
         --scrollbar-track: #050505;
@@ -60,14 +80,14 @@
       }
 
       html.light {
-        --bg-primary: #f8fafc; /* Premium soft off-white slate background */
-        --bg-secondary: #ffffff; /* Pure white for cards and key areas */
-        --text-light: #0f172a; /* Dark navy/charcoal headings for maximum contrast */
-        --text-dim: #334155; /* Highly readable charcoal grey for body text */
-        --text-muted: #64748b; /* Medium slate gray for muted texts */
-        --border: #cbd5e1; /* Clear and visible but elegant light-gray border */
-        --accent: #0f172a; /* Premium dark slate accent */
-        --accent-soft: #f1f5f9; /* Soft background tint */
+        --bg-primary: #f8fafc;
+        --bg-secondary: #ffffff;
+        --text-light: #0f172a;
+        --text-dim: #334155;
+        --text-muted: #64748b;
+        --border: #cbd5e1;
+        --accent: #0f172a;
+        --accent-soft: #f1f5f9;
         --scrollbar-track: #f8fafc;
         --scrollbar-thumb: #cbd5e1;
         --noise-opacity: 0.01;
@@ -77,10 +97,10 @@
       ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
       ::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 10px; }
       ::-webkit-scrollbar-thumb:hover { background: #525252; }
-      
+
       html { scroll-behavior: smooth; }
       body { overflow-x: hidden; -webkit-font-smoothing: antialiased; }
-      
+
       .tech-border {
         border: 1px solid var(--border);
         transition: border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -96,8 +116,7 @@
       .code-font {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       }
-      
-      /* Subtle noise overlay */
+
       body::before {
         content: "";
         position: fixed;
@@ -112,24 +131,58 @@
       }
     </style>
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Kevin Yumbya Sila",
-      "url": "https://kevsilaservices.netlify.app",
-      "jobTitle": "Developer & AI Automation Consultant",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Nairobi",
-        "addressCountry": "Kenya"
-      },
-      "sameAs": [
-        "https://linkedin.com/in/kevin-sila-9143b618a/",
-        "https://github.com/kevsila"
-      ],
-      "description": "Developer and Digital Systems Strategist specializing in AI automation, SEO, and scalable web solutions."
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://kevsilaportfolio.netlify.app/#website",
+          "url": "https://kevsilaportfolio.netlify.app/",
+          "name": "Kevin Yumbya Sila Portfolio",
+          "inLanguage": "en",
+          "about": {
+            "@id": "https://kevsilaportfolio.netlify.app/#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://kevsilaportfolio.netlify.app/#person",
+          "name": "Kevin Yumbya Sila",
+          "url": "https://kevsilaportfolio.netlify.app/",
+          "jobTitle": "ICT, Business Systems & Digital Transformation Consultant",
+          "description": "ICT, research and data professional working across business systems, AI workflows, dashboards, digital transformation and operational intelligence.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Nairobi",
+            "addressCountry": "KE"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Kenyatta University"
+          },
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Silatech Growth Partners",
+            "url": "https://kevsilaservices.netlify.app/"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/kevin-sila-9143b618a/",
+            "https://github.com/KevSila"
+          ],
+          "knowsAbout": [
+            "Business systems",
+            "Digital transformation",
+            "Operational intelligence",
+            "Artificial intelligence automation",
+            "Research data systems",
+            "Business intelligence dashboards",
+            "Web development",
+            "SEO"
+          ]
+        }
+      ]
     }
     </script>
 
@@ -138,22 +191,31 @@
     o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
     o.onload=function(){window.trackingFunctions.onLoad({appId:"6943eae3e163fe0019c6d88a"})},
     document.head.appendChild(o)}initApollo();</script>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
-    "recharts": "https://esm.sh/recharts@^3.7.0",
-    "vite": "https://esm.sh/vite@^7.3.1"
-  }
-}
-</script>
-</head>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+        "recharts": "https://esm.sh/recharts@^3.7.0",
+        "vite": "https://esm.sh/vite@^7.3.1"
+      }
+    }
+    </script>
+  </head>
   <body class="bg-primary text-textLight font-sans antialiased selection:bg-accent selection:text-white">
     <div id="root"></div>
-    <!-- The build tool will look for this file and bundle it -->
+    <noscript>
+      <main>
+        <h1>Kevin Yumbya Sila</h1>
+        <p>
+          ICT, research and data professional focused on business systems, digital transformation,
+          AI workflows, dashboards, websites and operational intelligence in Nairobi, Kenya.
+        </p>
+      </main>
+    </noscript>
     <script type="module" src="/index.tsx"></script>
   </body>
 </html>
