@@ -2,25 +2,25 @@
   command = "npm run build"
   publish = "dist"
 
-# Keep static crawler files as real files and give them explicit response types.
+# Keep crawler/verification files as real static files with explicit response types.
+# Revalidate them on each request while Search Console setup is being completed.
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=UTF-8"
-    Cache-Control = "public, max-age=300"
-    X-Robots-Tag = "noindex"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/robots.txt"
   [headers.values]
     Content-Type = "text/plain; charset=UTF-8"
-    Cache-Control = "public, max-age=300"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]
   for = "/googlec555c9832d27b872.html"
   [headers.values]
     Content-Type = "text/html; charset=UTF-8"
-    Cache-Control = "public, max-age=300"
+    Cache-Control = "public, max-age=0, must-revalidate"
 
 # Baseline security/quality headers for the site.
 [[headers]]
@@ -31,7 +31,7 @@
     X-Frame-Options = "SAMEORIGIN"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
 
-# SPA fallback. Netlify serves existing static files first because force is false,
+# SPA fallback. Existing static files take precedence because force is false,
 # so sitemap.xml, robots.txt, the verification file, JS, CSS and images stay intact.
 [[redirects]]
   from = "/*"
