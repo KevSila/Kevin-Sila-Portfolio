@@ -1,0 +1,40 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Keep static crawler files as real files and give them explicit response types.
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=UTF-8"
+    Cache-Control = "public, max-age=300"
+    X-Robots-Tag = "noindex"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=UTF-8"
+    Cache-Control = "public, max-age=300"
+
+[[headers]]
+  for = "/googlec555c9832d27b872.html"
+  [headers.values]
+    Content-Type = "text/html; charset=UTF-8"
+    Cache-Control = "public, max-age=300"
+
+# Baseline security/quality headers for the site.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+# SPA fallback. Netlify serves existing static files first because force is false,
+# so sitemap.xml, robots.txt, the verification file, JS, CSS and images stay intact.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
