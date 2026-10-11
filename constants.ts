@@ -29,16 +29,16 @@ export const NAV_LINKS = [
 export const BRANDING = {
   name: 'Kevin Yumbya Sila',
   title: 'Systems Builder • ICT & Digital Transformation Consultant • Research & Data Professional',
-  heroStatement: 'Bridging research, technology, leadership, and operations to build systems that create measurable impact.',
-  heroDescription: 'I work at the intersection of ICT, research, data systems, AI automation, digital media, public health programs, and operational intelligence. I help organizations turn scattered information, manual workflows, and communication gaps into structured systems that support better reporting, decision-making, service delivery, and measurable impact.',
+  heroStatement: 'Building practical systems that connect research, operations, data, and software.',
+  heroDescription: 'I work across ICT, operational research, data engineering, business analysis, software development, and AI-assisted workflows. I help organisations turn fragmented information and manual processes into tested systems that support clearer decisions, dependable delivery, and useful operational intelligence.',
   philosophyQuote: 'Systemic clarity follows the subtraction of the unnecessary.',
   philosophySupport: 'I believe technology should simplify complexity, research should inform action, and leadership should empower people. Whether I am building AI systems, coordinating national surveys, improving business workflows, or leading community initiatives, my focus remains the same: create systems that help people make better decisions.',
-  aboutText1: 'I am a multidisciplinary ICT, research, data, and operations professional with a B.Sc. in Mathematics and Computer Science from Kenyatta University. My work spans public health research, field coordination, data systems, website development, digital media strategy, AI automation, business intelligence, youth programming, and strategic documentation.',
-  aboutText2: 'I have supported national-level research initiatives, led field teams, built digital workflows, managed operational reporting systems, developed websites and digital assets, supported paid campaign tracking, and created AI-powered tools and prototypes. My career is connected by one theme: building practical systems that turn complexity into clarity.',
+  aboutText1: 'I am a multidisciplinary ICT, research, data, and operations professional with a B.Sc. Mathematics and Computer Science from Kenyatta University. My work spans public-health research, field coordination, data engineering, business systems, software development, AI-assisted workflows, operational reporting, and technical documentation.',
+  aboutText2: 'I have supported national research initiatives, coordinated field teams, built reusable data-collection and validation workflows, developed full-stack business tools, and translated operational problems into documented systems. My career is connected by one theme: building practical systems that turn complexity into clarity.',
   coreIdentity: [
     'ICT and digital systems practitioner',
     'Research coordinator',
-    'AI and automation builder',
+    'Software and business-systems builder',
     'Website and digital media support professional',
     'Digital transformation practitioner',
     'Community leader',
@@ -48,12 +48,12 @@ export const BRANDING = {
 };
 
 export const METRICS = [
-  { value: '47', label: 'County Chapters Supported', detail: 'Led Google Cloud & digital adoption nationwide' },
-  { value: '10+', label: 'Team Members Supervised', detail: 'Coordinated Rift Valley field research teams' },
-  { value: '5+', label: 'Years of Community Leadership', detail: 'Spearheading technology & social programs' },
-  { value: '100+', label: 'Strategic Docs Produced', detail: 'Reports, concept notes & administrative proposals' },
-  { value: '10+', label: 'Digital Systems & Tech Built', detail: 'Deploying custom workflows & automation apps' },
-  { value: '500+', label: 'Youth Reached Through Programs', detail: 'Health awareness & mentorship campaigns' },
+  { value: 'National', label: 'Research Coordination', detail: 'Public-health and expenditure research operations' },
+  { value: 'Multi-site', label: 'Field Operations', detail: 'Team coordination, QA, ethics, and daily reporting' },
+  { value: 'Full-stack', label: 'Business Systems', detail: 'Operational data, APIs, workflows, and owner tools' },
+  { value: 'Cross-platform', label: 'Data Engineering', detail: 'Browser automation, validation, recovery, and CI' },
+  { value: 'QA-led', label: 'Product Development', detail: 'Typed models, regression tests, and clear boundaries' },
+  { value: 'Human-led', label: 'AI Workflows', detail: 'Bounded enhancement with review and fallback paths' },
 ];
 
 export const CATEGORIZED_SKILLS = [
@@ -63,6 +63,14 @@ export const CATEGORIZED_SKILLS = [
       'WordPress', 'Divi', 'Elementor', 'Google Sites', 'Wix', 'Netlify', 
       'Website Maintenance', 'SEO', 'Google Analytics', 'Search Console', 
       'Domain/Hosting Basics', 'Google Workspace', 'Forms', 'Sheets', 'Drive'
+    ]
+  },
+  {
+    category: 'Software & Business Systems',
+    skills: [
+      'Python', 'TypeScript', 'React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma',
+      'REST APIs', 'Selenium', 'Git', 'GitHub', 'GitHub Actions', 'CI/CD', 'Vite',
+      'Netlify', 'Railway', 'Relational Data Modelling', 'Testing & QA'
     ]
   },
   {
@@ -111,7 +119,7 @@ export const IMPACT_AREAS: ImpactArea[] = [
         role: 'Research Assistant & Rift Valley Site Coordinator',
         organizations: 'NSDCC, Kenya Prisons Service, NASCOP, Kenya Red Cross Society, ADI',
         year: '2026',
-        details: 'Selected through a competitive national recruitment process for a baseline assessment examining HIV & TB Prevention, Sexual & Reproductive Health Services, Human Rights, and Gender Needs among incarcerated populations in Kenya. Served as Rift Valley Site Coordinator. Oversaw data collection activities in Nakuru, Eldoret, and Kitale. Supervised a team of 8 Research Assistants. Coordinated field operations, stakeholder engagement, quality assurance, ethical compliance, and daily reporting.',
+        details: 'Selected through a competitive national recruitment process for a baseline assessment examining HIV & TB Prevention, Sexual & Reproductive Health Services, Human Rights, and Gender Needs among incarcerated populations in Kenya. Served as Rift Valley Site Coordinator across Nakuru, Eldoret, and Kitale, supervising 8 Research Assistants and coordinating operations, stakeholder engagement, quality assurance, ethical compliance, and daily reporting.',
         tags: ['Public Health Research', 'MEL', 'Data Collection', 'Site Coordination', 'HIV/TB', 'SRH', 'Human Rights', 'Correctional Health', 'Daily Reporting', 'Team Supervision']
       },
       {
@@ -148,25 +156,25 @@ export const IMPACT_AREAS: ImpactArea[] = [
       {
         title: 'Website, SEO & Digital Presence Projects',
         role: 'Developer & Digital Strategist',
-        organizations: 'K-Sila Services / Personal Projects',
+        organizations: 'Independent practice → Silatech Growth Partners',
         year: '2024 - Present',
-        details: 'Built and maintained digital presence projects including portfolio websites, landing pages, book landing pages, design showcases, and service websites. Applied SEO, responsive design, analytics thinking, and content structure to support visibility and lead generation.',
+        details: 'Built and maintained websites and digital-presence projects through independent freelance work from 2024, continuing the practice through Silatech Growth Partners after its formal registration as a sole proprietorship in 2026. Applied SEO, responsive design, analytics thinking, and content structure to support visibility and lead generation.',
         tags: ['Website Development', 'Landing Pages', 'SEO', 'Google Sites', 'Wix', 'WordPress', 'Netlify', 'Responsive Design', 'Portfolio Websites', 'Analytics']
       },
       {
         title: 'Digital Media & Paid Campaign Support',
         role: 'Digital Media Strategist / Campaign Support',
-        organizations: 'K-Sila Services / Personal Projects',
+        organizations: 'Personal projects and independent practice → Silatech Growth Partners',
         year: '2023 - Present',
-        details: 'Supported digital media strategy, social media planning, content structures, Google Ads, Meta Ads, campaign tracking, and performance reporting. Developed content calendars, digital media style guides, and communication assets for awareness, visibility, and engagement.',
+        details: 'Developed personal digital-media capability from 2023, delivered independent freelance campaign work from 2024, and continued the practice through Silatech Growth Partners after formal registration in 2026. Work includes social media planning, Google Ads, Meta Ads, campaign tracking, reporting, content calendars, style guides, and communication assets.',
         tags: ['Digital Media Strategy', 'Google Ads', 'Meta Ads', 'Facebook Ads Manager', 'Campaign Reporting', 'Content Calendars', 'Social Media Strategy', 'Google Analytics', 'SEO', 'Communication Assets']
       },
       {
         title: 'Canva-Based Communication Design',
         role: 'Design Support / Communication Assets',
-        organizations: 'K-Sila Services / Personal Projects',
+        organizations: 'Personal projects and independent practice → Silatech Growth Partners',
         year: 'Active',
-        details: 'Create and adapt Canva-based visual communication assets such as posters, flyers, social media graphics, presentation decks, infographics, and campaign materials. This supports program communication, social media visibility, awareness activities, and business branding.',
+        details: 'Create and adapt Canva-based visual communication assets through personal projects, independent freelance work, and the current Silatech Growth Partners practice. Outputs include posters, flyers, social media graphics, presentation decks, infographics, and campaign materials.',
         tags: ['Canva', 'Posters', 'Flyers', 'Social Media Graphics', 'Presentation Decks', 'Infographics', 'Communication Design', 'Brand Assets', 'Campaign Materials']
       }
     ]
@@ -174,62 +182,54 @@ export const IMPACT_AREAS: ImpactArea[] = [
   {
     id: 'ai-automation',
     title: 'AI & Automation',
-    description: 'I build and prototype AI-powered systems that reduce manual work, improve follow-up, summarize information, support productivity, and help organizations make better decisions. I use AI tools such as Gemini, Google AI Studio, ChatGPT, and AI coding assistants to prototype systems, write code faster, structure workflows, generate documentation, and test automation ideas.',
+    description: 'I design AI-assisted workflows with structured inputs, deterministic controls, human review, and clear fallback paths.',
     cards: [
       {
+        title: 'BeeEPiC WISDOM Delegation Mapper',
+        role: 'Business systems and implementation contributor',
+        organizations: 'Private client work',
+        year: '2026',
+        details: 'Contributed to a multi-step decision-support workflow that turns business context, delegation goals, bottlenecks, tasks, and current systems into structured role, workflow, systems, and KPI recommendations. The implementation combines deterministic logic with bounded Gemini enhancement, rules-based fallback, human review, structured storage, and notification controls.',
+        tags: ['Business Analysis', 'Workflow Design', 'Decision Support', 'Gemini', 'Human Review', 'Regression Testing']
+      },
+      {
+        title: 'Asili Operations Automation',
+        role: 'Full-stack systems development',
+        organizations: 'Asili / Silatech Growth Partners',
+        year: '2026',
+        details: 'Implemented API-backed order capture, idempotent processing, transactional stock updates, lifecycle notifications, payment records, and owner reporting so customer-facing activity produces dependable operational records.',
+        tags: ['Workflow Automation', 'REST APIs', 'Structured Data', 'Notifications', 'Idempotency', 'QA']
+      },
+      {
         title: 'AI Job Application Assistant',
-        role: 'Developer & Integrator',
-        organizations: 'GitHub: Job-application-assistant',
+        role: 'Private AI-assisted career application workspace',
+        organizations: 'Private repository',
         year: '2024',
-        details: 'An AI-powered career optimization suite built with React, TypeScript, Tailwind CSS, and Google Gemini API. It analyzes job descriptions and supports the generation of ATS-aligned CVs, cover letters, and application responses.',
-        tags: ['React', 'TypeScript', 'Tailwind', 'Gemini API', 'ATS', 'Automation', 'Productivity']
-      },
-      {
-        title: 'Neural Audio Engine / Text-To-Speech Audio Generator',
-        role: 'Developer & Integrator',
-        organizations: 'GitHub: Text-To-Speech-Audio-Generator',
-        year: '2024',
-        details: 'A web-based tool that transforms text into natural-sounding speech using Google Gemini AI and the Web Audio API. It demonstrates AI-powered multimedia generation and browser-based interaction.',
-        tags: ['TypeScript', 'Gemini AI', 'Web Audio API', 'Text-to-Speech', 'Multimedia']
-      },
-      {
-        title: 'WhatsApp Lead Qualification System',
-        role: 'Concept / Prototype',
-        organizations: 'Personal Research / K-Sila Services',
-        year: '2025',
-        details: 'A concept/prototype for businesses that captures leads through forms or WhatsApp, qualifies them using AI, summarizes the request, and routes leads for follow-up.',
-        tags: ['AI Automation', 'WhatsApp', 'CRM', 'Lead Qualification', 'Business Systems']
-      },
-      {
-        title: 'AI CRM Assistant',
-        role: 'Concept / Prototype',
-        organizations: 'Silatech Growth Partners',
-        year: '2025',
-        details: 'A Silatech Growth Partners concept for helping SMEs manage customer inquiries, summarize leads, prioritize follow-ups, and automate response workflows.',
-        tags: ['CRM', 'AI Assistant', 'Sales Automation', 'SME Automation', 'Business Intelligence']
-      },
-      {
-        title: 'Automated Reporting System',
-        role: 'Concept / Tool Project',
-        organizations: 'Inspired by Maisha Youth Movement',
-        year: '2025',
-        details: 'A concept inspired by Maisha Youth Movement reporting needs, designed to collect field data through forms, summarize activity reports using AI, and generate dashboards for leadership decision-making.',
-        tags: ['Reporting Automation', 'Google Forms', 'Dashboards', 'AI Summaries', 'Program Monitoring']
+        details: 'Supports job-description extraction from text, images, and PDFs; grounded employer and requirement analysis; evidence/gap separation; schema-validated editable CVs and cover letters; ATS-readiness and keyword-coverage estimates; claim warnings; DOCX and text-based PDF export; and complete career-profile JSON backup/import. Its current client-side Gemini integration would require a server-side API boundary before public deployment.',
+        tags: ['React', 'TypeScript', 'Gemini API', 'Schema Validation', 'ATS', 'DOCX / PDF Export']
       }
     ]
   },
   {
     id: 'digital-transformation',
     title: 'Digital Transformation',
-    description: 'I help organizations adopt digital tools, improve workflows, organize information, and create systems for communication, reporting, collaboration, and decision-making.',
+    description: 'I connect customer-facing tools, operational records, workflows, and reporting into practical business systems.',
     cards: [
+      {
+        title: 'Asili Commerce & Operations Platform',
+        role: 'Full-stack systems development',
+        organizations: 'Asili / Silatech Growth Partners',
+        year: '2026',
+        details: 'Evolved a product website into a connected commerce and owner-operations system covering orders, customers, inventory movements, payment records, manual sales, notifications, and sales reporting. The sample batch passport remains a clearly labelled demonstration while richer traceability stays on the roadmap.',
+        tags: ['Business Systems', 'React', 'Express', 'PostgreSQL', 'Prisma', 'Operational Reporting']
+      },
       {
         title: 'Maisha Youth Movement National Digital Operations',
         role: 'Information Technology Lead',
         organizations: 'Maisha Youth Movement (National)',
-        year: '2022 - 2025',
-        details: 'Supported digital transformation across 47 county chapters. Led Google Cloud / Google Workspace adoption. Developed digital reporting systems, membership data collection forms, and automated workflows. Designed website prototypes in Figma. Supported digital media strategy, SEO, cloud storage, and backup structures, improving overall organizational workflow.',
-        tags: ['Google Cloud', 'Digital Transformation', '47 Counties', 'Figma', 'Reporting Systems', 'Youth Programs', 'Workflows']
+        year: 'March 2022 – May 2025',
+        details: 'Supported national digital operations across 47 county chapters through Google Workspace adoption, reporting systems, membership data-collection forms, cloud file structures, website prototypes, and workflow documentation.',
+        tags: ['Google Workspace', 'Digital Transformation', 'Figma', 'Reporting Systems', 'Data Collection', 'Workflows']
       },
       {
         title: 'Christine Campbell Rapin Digital Platform Support',
@@ -247,11 +247,11 @@ export const IMPACT_AREAS: ImpactArea[] = [
     description: 'I have led youth-focused programs, community initiatives, mentorship, stakeholder engagement, and strategic documentation.',
     cards: [
       {
-        title: 'Maisha Youth Machakos Chapter leadership',
+        title: 'Maisha Youth Movement — Machakos County Chapter',
         role: 'Chairperson',
         organizations: 'Maisha Youth Movement',
-        year: '2020 - 2025',
-        details: 'Led county-level youth health awareness and community engagement initiatives with 500+ members. Developed county work plans, budgets, event strategies, proposals, concept notes, and reports. Coordinated partnerships with stakeholders and youth networks.',
+        year: 'December 2020 – May 2025',
+        details: 'Led county-level youth health awareness and community engagement initiatives. Developed work plans, budgets, event strategies, proposals, concept notes, and reports while coordinating partners and youth networks.',
         tags: ['Youth Leadership', 'Community Engagement', 'Proposal Writing', 'Budgeting', 'Mentorship', 'Health Awareness']
       },
       {
@@ -270,10 +270,18 @@ export const IMPACT_AREAS: ImpactArea[] = [
     description: 'I build operational systems that improve tracking, reporting, decision-making, and workflow efficiency.',
     cards: [
       {
+        title: 'Residential Market Intelligence & Research Operations',
+        role: 'Research operations and systems support',
+        organizations: 'Home Builders Research',
+        year: '2026',
+        details: 'Supported public-source county-record research, subdivision and builder review, exception investigation, geographic and property validation, structured tracking, and documentation. Recurring research work informed a reusable deed-data platform with explicit validation and handover boundaries.',
+        tags: ['Market Research', 'County Records', 'Data Validation', 'Exception Review', 'Structured Trackers', 'Documentation']
+      },
+      {
         title: 'Equavo Limited Operational Systems',
         role: 'Assistant Manager & IT Associate',
         organizations: 'Equavo Limited (Athi River, Machakos)',
-        year: '2024 - 2025',
+        year: 'January 2024 – January 2025',
         details: 'Managed warehouse operations and operational reporting for crude avocado oil production. Built Excel-based tracking systems for inventory, production, petty cash, wages, machine parts, and quality control. Tracked Free Fatty Acid (FFA), Dry Matter, and Moisture Loss metrics. Supported technical troubleshooting, data entry, reporting, and workflow optimization.',
         tags: ['Operations', 'Excel Automation', 'Inventory Systems', 'Production Analytics', 'Quality Control', 'FFA', 'Dry Matter', 'Reporting']
       }
@@ -302,7 +310,7 @@ export const RESEARCH_SYSTEM_CARDS: ResearchSystem[] = [
     role: 'Research Assistant & Rift Valley Site Coordinator',
     year: '2026',
     scope: 'A national baseline assessment examining HIV & TB Prevention, Sexual & Reproductive Health, Human Rights, and gender needs inside prisons across Nairobi, Nakuru, Eldoret, and Kitale.',
-    impact: 'Directly managed Rift Valley site data collection, supervised 8 Research Assistants, navigated administrative coordination and maintained strict ethical and quality standards within correctional environments.',
+    impact: 'Managed Rift Valley site data collection, supervised 8 Research Assistants, navigated administrative coordination, and maintained strict ethical and quality standards within correctional environments.',
     toolsMethods: ['Mixed-methods Research', 'Digital Questionnaires', 'Site Coordination', 'Field Logistics', 'Ethical Approvals'],
     tags: ['Correctional Health', 'Public Health', 'Site Coordination', 'Team Supervision']
   },
@@ -316,11 +324,11 @@ export const RESEARCH_SYSTEM_CARDS: ResearchSystem[] = [
     tags: ['Health Financing', 'HIV Expenditure', 'Policy Analytics', 'Data Standardisation']
   },
   {
-    title: 'Maisha Youth National Surveys & Digital Operations',
+    title: 'Maisha Youth Movement National Surveys & Digital Operations',
     role: 'Information Technology Lead',
-    year: '2022 - 2025',
-    scope: 'National youth-led research assessing health, socioeconomic development, and policy alignment across 47 chapters.',
-    impact: 'Designed membership data collection systems and implemented Google Cloud services for secure reporting. Coordinated nationwide qualitative & quantitative surveys, informing county/national work plans and budgets.',
+    year: 'March 2022 – May 2025',
+    scope: 'National youth-led research assessing health, socioeconomic development, and policy alignment across a distributed chapter network.',
+    impact: 'Designed membership data collection systems and implemented Google Cloud services for secure reporting across 47 county chapters. Coordinated nationwide qualitative & quantitative surveys, informing county/national work plans and budgets.',
     toolsMethods: ['ODK (Open Data Kit)', 'Cloud Infrastructure Integration', 'Quantitative Survey Design', 'Figma Prototyping'],
     tags: ['Survey Operations', 'Youth Advocacy', 'Cloud Infrastructure', 'Digital Forms']
   },
@@ -329,7 +337,7 @@ export const RESEARCH_SYSTEM_CARDS: ResearchSystem[] = [
     role: 'Research Assistant & Cluster Team Lead (Cluster 2)',
     year: '24',
     scope: 'Rights, gender, and HIV response assessment in Central Kenya (Nairobi, Kajiado, Embu, Kitui).',
-    impact: 'Supervised primary field interviews, facilitated focus group discussions (FGDs) with vulnerable groups, and ensured 100% compliance with strict international ethical data protocols.',
+    impact: 'Supervised primary field interviews, facilitated focus group discussions (FGDs) with vulnerable groups, and maintained strict ethical and data-quality protocols.',
     toolsMethods: ['Focus Group Discussions (FGD)', 'ODK Mobile Systems', 'Qualitative Analysis', 'Ethical Compliance'],
     tags: ['Qualitative Research', 'Gender Rights', 'FGD Facilitation', 'Rights Assessment']
   },
@@ -351,7 +359,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'NSDCC / KPS / NASCOP / KRCS / ADI',
     description: [
       'Selected through competitive national recruitment for HIV/TB, SRH, Human Rights, and Gender Needs Baseline in Kenya Prisons.',
-      'Supervised 8 Research Assistants executing survey protocols across key locations: Nakuru, Eldoret, and Kitale.',
+      'Supervised 8 Research Assistants executing survey protocols across Nakuru, Eldoret, and Kitale.',
       'Over-saw stakeholder field operations, ethical conformance, technical data validation, and daily data reporting chains.'
     ]
   },
@@ -367,12 +375,12 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     year: '2024 - Present',
-    role: 'Developer & Data Strategist',
-    company: 'K-Sila Services & Zenfit',
+    role: 'Founder & Digital Strategist',
+    company: 'Silatech Growth Partners',
     description: [
-      'Automating business workflows for regional organizations through custom AI integrations and conversion-optimized websites.',
-      'Engineered and managed paid marketing campaigns, attaining 11.15% CTR on Meta and 10.5% on Google Ads ($0.03 CPC average).',
-      'Deployed regional and national search engine optimization targeting strategic workflows across all 47 Kenyan counties.'
+      'Built and delivered independent freelance digital, systems, website, campaign, and automation work from 2024, later formalising the practice as Silatech Growth Partners, a registered sole proprietorship, in 2026.',
+      'Supported paid campaign setup, tracking, and reporting across Meta and Google Ads, including campaign and project work for Zenfit.',
+      'Work spans business systems, AI-assisted workflows, websites, digital strategy, operational intelligence, and client delivery.'
     ],
     link: { label: 'View GitHub Profile', url: 'https://github.com/kevsila' }
   },
@@ -381,39 +389,39 @@ export const EXPERIENCE: ExperienceItem[] = [
     role: 'Website & Digital Platform Assistant',
     company: 'Christine Campbell Rapin',
     description: [
-      'Maintained business WordPress assets via Divi builder, sustaining 99.9% uptime and streamlined page load-speeds.',
+      'Maintained business WordPress assets through Divi, responsive page updates, performance checks, and content support.',
       'Configured automated lead workflows and strategic funnels inside GoHighLevel / Actionera platforms.',
       'Addressed frontend CSS display issues and implemented SEO improvements verified through PageSpeed Audits.'
     ]
   },
   {
-    year: '2022 - 2025',
+    year: 'March 2022 – May 2025',
     role: 'Information Technology Lead',
     company: 'Maisha Youth Movement (National)',
     description: [
-      'Managed Google Workspace and Google Cloud migrations nationwide for secure inter-chapter document repositories.',
+      'Supported national digital operations across 47 county chapters, including Google Workspace and Google Cloud migrations for secure inter-chapter document repositories.',
       'Engineered wireframes and high-conversion sitemaps in Figma to coordinate the national website development budget.',
       'Pioneered ODK frameworks for nationwide qualitative/quantitative youth research, supporting administrative work plans.'
     ]
   },
   {
-    year: '2020 - 2025',
+    year: 'December 2020 – May 2025',
     role: 'Chairperson',
-    company: 'Maisha Youth - Machakos Chapter',
+    company: 'Maisha Youth Movement — Machakos County Chapter',
     description: [
-      'Led 500+ community advocates in region-wide health awareness campaigns and mental health initiatives.',
+      'Led county-level community health awareness, mental-health, and youth engagement initiatives.',
       'Drafted comprehensive county strategic work plans, annual budgets, proposal briefs, and milestone reporting documents.',
       'Engaged with local public health officials and cross-county youth networks to strengthen service linkages.'
     ]
   },
   {
-    year: '2024 - 2025',
+    year: 'January 2024 – January 2025',
     role: 'Assistant Manager & IT Associate',
     company: 'Equavo Limited',
     description: [
       'Coordinated daily operations and wage payouts for Athi River avocado oil centrifugation processing facility.',
-      'Constructed Advanced Excel dashboards monitoring FFA levels, water loss, machine maintenance inventories, and weekly wage rates.',
-      'Integrated SQL data models, eliminating production logging errors by an estimated 30%.'
+      'Built Excel trackers covering FFA levels, moisture loss, machine-parts inventory, production records, petty cash, and wages.',
+      'Improved the consistency of production logging and operational reporting through structured records and review routines.'
     ]
   },
   {
@@ -437,11 +445,11 @@ export const EXPERIENCE: ExperienceItem[] = [
     ]
   },
   {
-    year: '2020 - 2022',
+    year: 'January 2020 – December 2022',
     role: 'Online Academic Tutor',
     company: 'Course Hero',
     description: [
-      'Tutored global university students in Mathematics, Computer Science, and English, maintaining a 4.8/5.0 rating.',
+      'Tutored university students in Mathematics, Computer Science, and English through structured written explanations.',
       'Compiled academic study guides and instructional resources to simplify numerical logic and algorithmic studies.'
     ]
   },
@@ -458,86 +466,62 @@ export const EXPERIENCE: ExperienceItem[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: 'Job-application-assistant',
-    category: 'AI & Productivity',
-    description: 'AI-powered career optimization suite built with React, TypeScript, Tailwind CSS, and Gemini API. It analyzes unstructured job descriptions and creates ATS-aligned CVs matched with user profiles.',
-    techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Gemini API'],
-    links: [
-      { label: 'Source', url: 'https://github.com/KevSila/Job-application-assistant', type: 'github' }
-    ],
-    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    title: 'Silatech Growth Partners Service Platform',
-    category: 'SME & NGO Consultancy',
-    description: 'A consulting service website presenting AI-enabled operational systems, business intelligence, workflow automation, dashboards, client intake systems, and digital transformation services for SMEs, NGOs, and growing organizations.',
-    techStack: ['Service Website', 'Digital Strategy', 'AI Systems', 'Operational Intelligence', 'Lead Capture', 'Netlify'],
-    links: [
-      { label: 'Live Showcase', url: 'https://kevsilaservices.netlify.app', type: 'live' }
-    ],
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    title: 'Google Workspace Reporting System Concept',
-    category: 'Systems Automation',
-    description: 'A lightweight reporting system concept using Google Forms, Google Sheets, Apps Script, and dashboards to help programs collect activity reports, summarize performance, and support leadership decision-making.',
-    techStack: ['Google Forms', 'Google Sheets', 'Apps Script', 'Reporting', 'Dashboards', 'M&E'],
-    links: [
-      { label: 'Source', url: 'https://github.com/KevSila', type: 'github' }
-    ],
+    title: 'Home Builders Research — County Deed Data Platform',
+    category: 'Data Engineering & Research Automation',
+    description: 'Designed and developed a reusable Python and Selenium platform for collecting and validating county deed records. Greenville is the completed reference adapter, with pagination integrity, resumable enrichment, QC validation, immutable exports, recovery safeguards, cross-platform CI, and engineering handover; production acceptance remains a separate operational gate.',
+    techStack: ['Python', 'Selenium', 'Data Validation', 'Recovery', 'GitHub Actions', 'Windows / Linux'],
+    status: 'Private client implementation · Reference adapter and engineering handover complete',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'WhatsApp Lead Capture + CRM Concept',
-    category: 'SME Systems',
-    description: 'A business workflow concept for capturing WhatsApp or form-based inquiries, organizing leads in a CRM-lite database, generating follow-up reminders, and supporting owner visibility through dashboards.',
-    techStack: ['WhatsApp Business', 'CRM', 'Lead Capture', 'Follow-Up', 'Automation', 'SME Systems'],
+    title: 'BeeEPiC WISDOM Delegation Mapper',
+    category: 'Business Systems & AI Decision Support',
+    description: 'Contributed to a structured business diagnostic that converts context, bottlenecks, delegation goals, tasks, and current systems into practical role, workflow, systems, and KPI recommendations. The implementation combines deterministic logic, bounded Gemini enhancement, rules fallback, human review, structured submission storage, notifications, QA, and regression testing.',
+    techStack: ['Business Analysis', 'React', 'Google Apps Script', 'Gemini', 'Structured Data', 'Regression Testing'],
+    status: 'Private client work · Sanitised case study',
     links: [
-      { label: 'Source', url: 'https://github.com/KevSila', type: 'github' }
+      { label: 'Case Study', url: 'https://kevsilaservices.netlify.app/portfolio/beeepic-wisdom-mapper', type: 'live' }
     ],
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'Text-To-Speech-Audio-Generator',
-    category: 'AI & Multimedia',
-    description: 'A modern text-to-speech web application using Gemini AI and Web Audio API for custom audio synthesis and smooth browser playback.',
-    techStack: ['TypeScript', 'Gemini AI', 'Web Audio API'],
+    title: 'Asili — Commerce & Business Operations System',
+    category: 'Full-Stack Business Systems',
+    description: 'Evolved a Kenyan honey brand from a public website into an API-backed commerce and owner-operations platform. Implemented ordering, customer and product records, inventory movements, payment workflows, authenticated administration, manual sales, lifecycle notifications, and sales reporting; the batch passport remains a labelled demonstration.',
+    techStack: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs'],
+    status: 'Working system · Traceability demonstration clearly labelled',
     links: [
-      { label: 'Source', url: 'https://github.com/KevSila/Text-To-Speech-Audio-Generator', type: 'github' }
+      { label: 'Live Site', url: 'https://asilii.netlify.app/', type: 'live' },
+      { label: 'Source', url: 'https://github.com/KevSila/Asili-Eco-wellness-Brand', type: 'github' },
+      { label: 'Case Study', url: 'https://kevsilaservices.netlify.app/portfolio/asili-business-helper', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&q=80&w=800'
+    image: 'https://asilii.netlify.app/images/asili-raw-honey-jar.webp'
   },
   {
-    title: 'Kenya-Covid-Data-Exploration',
-    category: 'Data Analytics',
-    description: 'An exploratory data analysis project using SQL to analyze COVID-19 data, with intense focus on regional trends, casualty rates, and country-level health metrics.',
-    techStack: ['SQL', 'Data Analysis', 'EDA'],
-    links: [
-      { label: 'Source', url: 'https://github.com/kevsila/Kenya-Covid-Data-Exploration', type: 'github' }
-    ],
-    image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&q=80&w=800'
+    title: 'Stawi — Member & Coach Fitness Platform',
+    category: 'Product R&D & Application Engineering',
+    description: 'Designing and building a member-centred, trainer-connected fitness platform linking programmes, workout execution, retained training evidence, coach visibility, and progress workflows. Alpha 0.8.0 implements member and coach workspaces, programme and workout flows, device-local IndexedDB history, evidence views, an exercise catalogue, and an installable PWA.',
+    techStack: ['React', 'TypeScript', 'React Router', 'IndexedDB', 'PWA', 'CSS Modules'],
+    status: 'Product R&D · Interactive Alpha 0.8.0',
+    image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'KevSilaDesigns',
-    category: 'UI/UX Design',
-    description: 'A design portfolio / landing page showcasing visual design, front-end presentation, and personal branding work with high-fidelity mockups.',
-    techStack: ['TypeScript', 'Front-End Design', 'UI', 'Figma'],
+    title: 'Silatech Growth Partners',
+    category: 'Business Systems & Digital Transformation',
+    description: 'My founder-led consulting platform, formally registered as a sole proprietorship in 2026 after independent freelance work began in 2024. Silatech delivers practical business systems, workflow automation, AI-assisted operations, reporting, operational intelligence, and digital transformation for SMEs, NGOs, and growing organisations.',
+    techStack: ['Workflow Design', 'Business Systems', 'Operational Intelligence', 'AI-assisted Workflows', 'Research Support', 'Netlify'],
     links: [
-      { label: 'Source', url: 'https://github.com/KevSila/KevSilaDesigns', type: 'github' },
-      { label: 'Live Showcase', url: 'https://kevsiladesigns.netlify.app', type: 'live' }
+      { label: 'Live Site', url: 'https://kevsilaservices.netlify.app', type: 'live' }
     ],
-    image: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800'
   },
   {
-    title: 'KevSila-Books-Landing-Page',
-    category: 'Landing Page & Publications',
-    description: 'A modern landing page designed to showcase books, author identity, and high-conversion publishing presence with elegant typography.',
-    techStack: ['TypeScript', 'Landing Page', 'UI/UX'],
-    links: [
-      { label: 'Source', url: 'https://github.com/KevSila/KevSila-Books-Landing-Page', type: 'github' },
-      { label: 'Live Showcase', url: 'https://kevsilabooks.netlify.app', type: 'live' }
-    ],
-    image: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800'
+    title: 'AI Job Application Assistant',
+    category: 'AI & Productivity',
+    description: 'A private AI-assisted career application workspace supporting job-description extraction from text, images, and PDFs; grounded employer and requirement analysis; evidence/gap separation; schema-validated editable CVs and cover letters; ATS-readiness and keyword-coverage estimates; claim warnings; DOCX and text-based PDF export; and complete career-profile JSON backup/import. Its current client-side Gemini integration would require a server-side API boundary before public deployment.',
+    techStack: ['React', 'TypeScript', 'Gemini API', 'Schema Validation', 'ATS Analysis', 'DOCX / PDF Export'],
+    status: 'Private AI-assisted career application workspace',
+    image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800'
   }
 ];
 
@@ -558,7 +542,7 @@ export const PUBLICATIONS = [
 
 export const EDUCATION: EducationItem[] = [
   {
-    degree: 'B.Sc. in Mathematics and Computer Science',
+    degree: 'B.Sc. Mathematics and Computer Science',
     institution: 'Kenyatta University (Nairobi, Kenya)',
     year: 'Graduated July 2023',
     grade: 'Second Class Honors',
@@ -567,8 +551,8 @@ export const EDUCATION: EducationItem[] = [
   {
     degree: 'Secondary Education (KCSE)',
     institution: 'Murang\'a High School',
-    year: 'Graduated Dec 2015',
-    grade: 'A- (Minus)',
+    year: 'KCSE completed December 2015',
+    grade: 'A-',
     description: 'Strong foundation in logical sciences and mathematical reasoning.'
   }
 ];

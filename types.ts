@@ -14,7 +14,8 @@ export interface Project {
   category: string;
   description: string;
   techStack: string[];
-  links: ProjectLink[];
+  links?: ProjectLink[];
+  status?: string;
   image: string;
 }
 

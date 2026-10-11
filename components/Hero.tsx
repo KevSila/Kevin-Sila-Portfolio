@@ -127,13 +127,13 @@ const Hero: React.FC = () => {
             {/* Domain Pills */}
             <div className="flex flex-wrap gap-2 pt-2">
               {[
-                'ICT & Website Support',
+                'Software & Business Systems',
                 'Research & Evidence Systems',
-                'AI & Automation',
-                'Data & Dashboards',
-                'Digital Media & Campaigns',
-                'Youth & Community Programs',
-                'Strategy & Documentation'
+                'Data Engineering',
+                'AI-assisted Workflows',
+                'Operational Intelligence',
+                'Product Development',
+                'Testing & Documentation'
               ].map((domain) => (
                 <span 
                   key={domain} 

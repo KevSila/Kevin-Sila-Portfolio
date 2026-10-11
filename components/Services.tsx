@@ -44,27 +44,27 @@ const Services: React.FC = () => {
       id: 'ai-automation',
       title: 'AI & Workflow Automation',
       icon: <Cpu size={18} />,
-      description: 'Prototyping automated tools, AI workflows, and smart helpers that eliminate repetitive administrative work.',
+      description: 'Designing and implementing AI-assisted workflows and business systems that reduce repetitive work, structure operational data, and improve decision visibility.',
       bullets: [
-        'Custom AI assistant prototypes using Google Gemini API & AI Studio',
-        'ChatGPT API integrations and prompt engineering workflows',
-        'Google Apps Script automation for Gmail, Calendar, and Sheets',
-        'AI-assisted code development and script generation',
-        'WhatsApp lead qualification and CRM-lite workflow concepts',
-        'Low-cost data synchronisation and automated response pipelines'
+        'Structured assessments and decision-support workflows',
+        'Deterministic recommendation logic with bounded AI enhancement',
+        'Human review, approval, and fallback paths for AI-assisted output',
+        'Google Apps Script automation, storage, and notifications',
+        'API-backed workflow automation and operational records',
+        'Regression testing, documentation, and implementation handover'
       ]
     },
     {
       id: 'bi-operations',
-      title: 'Dashboards & Operations',
+      title: 'Business Systems & Operational Intelligence',
       icon: <BarChart3 size={18} />,
-      description: 'Creating dashboards and internal trackers that give operations managers clear visibility into productivity, costs, and output.',
+      description: 'Building connected operational records, reporting views, and workflow controls that make activity, stock, payments, and exceptions easier to manage.',
       bullets: [
-        'Looker Studio and Power BI interactive dashboard setup',
-        'Advanced Excel trackers (inventory, wages, petty cash, maintenance)',
-        'Data consolidation from disjointed sheets and sources',
-        'Operational reporting systems and warehouse production tracking',
-        'SQL modeling and basic relational database queries'
+        'Operational dashboards and structured management reporting',
+        'Inventory, order, payment, customer, and workflow records',
+        'Advanced Excel trackers for production and administration',
+        'Data consolidation, validation, and exception review',
+        'Relational data modelling and API-backed business tools'
       ]
     },
     {

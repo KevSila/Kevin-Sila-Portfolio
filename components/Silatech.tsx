@@ -4,28 +4,28 @@ import { ShieldCheck, ArrowRight, Zap, Building2, Workflow } from 'lucide-react'
 
 const Silatech: React.FC = () => {
   const serviceTags = [
-    'ICT Consultancy',
+    'Business Systems',
     'Research Operations',
-    'AI Workflows',
-    'Data Management',
-    'Communications Support'
+    'AI-assisted Workflows',
+    'Operational Intelligence',
+    'Digital Transformation'
   ];
 
   const pillars = [
     {
       title: 'Digital Capability',
       icon: <Zap size={14} />,
-      desc: 'Deploying low-cost cloud services, websites, and data structures that modernize team operations.'
+      desc: 'Building practical digital tools, connected workflows, and data structures around the way a team actually works.'
     },
     {
       title: 'Operational Logic',
       icon: <Workflow size={14} />,
-      desc: 'Organizing complex processes, data flows, and Excel models into simple, predictable systems.'
+      desc: 'Turning fragmented processes and records into clear workflows, controls, reporting, and decision visibility.'
     },
     {
       title: 'Institutional Readiness',
       icon: <Building2 size={14} />,
-      desc: 'Preparing documentation, reports, and concept notes that satisfy demanding stakeholder standards.'
+      desc: 'Supporting adoption through testing, documentation, training, handover, and evidence-based improvement.'
     }
   ];
 
@@ -50,7 +50,7 @@ const Silatech: React.FC = () => {
             <h3 className="text-textLight text-3xl md:text-4xl font-semibold tracking-tight">Silatech Growth Partners</h3>
           </div>
           <p className="text-textDim text-xs md:text-sm max-w-sm leading-relaxed opacity-95 font-light">
-            My professional service platform delivering digital capability, research support, and systems alignment to SMEs and NGOs.
+            My founder-led consulting platform for practical business systems, research operations, and digital transformation.
           </p>
         </div>
 
@@ -61,13 +61,13 @@ const Silatech: React.FC = () => {
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-5">
               <span className="text-[9px] font-mono tracking-widest text-textMuted bg-accentSoft border border-border/40 px-2.5 py-1 rounded-[2px] inline-block uppercase">
-                Freelance & Subcontracting Hub
+                Founder-led Consulting Platform
               </span>
               <p className="text-textLight text-lg md:text-xl font-light leading-relaxed">
-                Silatech Growth Partners is my professional services brand, established to deliver high-quality ICT setup, research operations, data modeling, and AI workflows under a unified, reliable engagement framework.
+                Silatech Growth Partners is my registered sole proprietorship, formalised in 2026 after I began delivering independent freelance work in 2024. It designs and implements business systems, AI-assisted workflows, operational reporting, and digital tools for SMEs, NGOs, and growing organisations.
               </p>
               <p className="text-textDim text-sm font-light leading-relaxed">
-                Whether supporting a business coach, a national public health study, or a youth movement chapters network, Silatech operates as an organized, systems-driven partner focused on operational intelligence and measurable reporting.
+                The work starts with the operating problem, then connects workflow design, structured data, software, testing, documentation, and handover into a system people can realistically adopt.
               </p>
             </div>
 

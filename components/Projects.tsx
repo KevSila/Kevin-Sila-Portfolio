@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
             <h3 className="text-textLight text-3xl md:text-4xl font-semibold tracking-tight">Technical Projects</h3>
           </div>
           <p className="text-textDim text-xs md:text-sm max-w-sm leading-relaxed opacity-95 font-light">
-            A showcase of production-ready web applications, automated logic layers, and exploratory data analytics repositories.
+            Selected systems spanning data engineering, business operations, decision support, product research, and applied AI workflows.
           </p>
         </div>
 
@@ -68,20 +68,27 @@ const Projects: React.FC = () => {
               </div>
 
               {/* Action buttons footer */}
-              <div className="flex items-center gap-5 mt-8 pt-4 border-t border-border/30">
-                {project.links.map(link => (
-                  <a 
-                    key={link.label} 
-                    href={link.url} 
-                    target="_blank" 
-                    rel="noreferrer"
-                    className="flex items-center gap-1.5 text-textDim text-[10px] font-semibold uppercase tracking-widest hover:text-textLight transition-colors"
-                  >
-                    {link.type === 'github' ? <Github size={12} /> : <ExternalLink size={12} />}
-                    {link.label}
-                  </a>
-                ))}
-              </div>
+              {(project.status || project.links?.length) && (
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-8 pt-4 border-t border-border/30">
+                  {project.status && (
+                    <span className="text-textMuted text-[9px] font-mono uppercase tracking-wider">
+                      {project.status}
+                    </span>
+                  )}
+                  {project.links?.map(link => (
+                    <a
+                      key={link.label}
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 text-textDim text-[10px] font-semibold uppercase tracking-widest hover:text-textLight transition-colors"
+                    >
+                      {link.type === 'github' ? <Github size={12} /> : <ExternalLink size={12} />}
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
