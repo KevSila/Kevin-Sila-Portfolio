@@ -23,7 +23,7 @@ const Experience: React.FC = () => {
           </div>
           <h3 className="text-textLight text-3xl md:text-4xl font-semibold tracking-tight">Professional Journey</h3>
           <p className="text-textDim text-sm max-w-xl mx-auto leading-relaxed opacity-95 font-light">
-            A comprehensive track record spanning engineering, academic research, community leadership, and business intelligence.
+            Selected roles across research, technology, operations, and community leadership.
           </p>
         </div>
 

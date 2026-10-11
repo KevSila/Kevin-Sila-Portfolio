@@ -175,7 +175,7 @@ const Hero: React.FC = () => {
               <div className="absolute w-32 h-32 bg-accent/5 rounded-full blur-3xl animate-pulse" />
               <div className="text-center space-y-2 p-8 z-10 selection:bg-transparent">
                 <span className="text-[10px] uppercase font-mono tracking-[0.3em] text-textLight/60 font-normal">SYSTEMS CLARITY</span>
-                <p className="text-xs text-textMuted italic leading-relaxed opacity-80">"Systemic clarity follows the subtraction of the unnecessary."</p>
+                <p className="text-xs text-textMuted italic leading-relaxed opacity-80">Practical systems for clearer decisions.</p>
               </div>
             </div>
           </div>

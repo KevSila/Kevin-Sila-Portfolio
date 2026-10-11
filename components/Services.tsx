@@ -118,7 +118,7 @@ const Services: React.FC = () => {
             <h3 className="text-textLight text-3xl md:text-4xl font-semibold tracking-tight">Services & Engagement Areas</h3>
           </div>
           <p className="text-textDim text-xs md:text-sm max-w-sm leading-relaxed opacity-95 font-light">
-            Providing practical, structured technical services and coordination support for organizations, businesses, and campaigns.
+            Practical technical services for organisations, businesses, and campaigns.
           </p>
         </div>
 

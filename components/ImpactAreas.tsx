@@ -41,7 +41,7 @@ const ImpactAreas: React.FC = () => {
             <h3 className="text-textLight text-3xl md:text-4xl font-semibold tracking-tight">Impact Areas</h3>
           </div>
           <p className="text-textDim text-xs md:text-sm max-w-sm leading-relaxed opacity-95 font-light">
-            A comprehensive mapping of my multi-disciplinary capabilities and systems engineering engagements.
+            Selected evidence across research, technology, operations, and community work.
           </p>
         </div>
 

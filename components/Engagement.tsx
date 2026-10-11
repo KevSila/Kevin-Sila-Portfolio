@@ -24,12 +24,12 @@ const Engagement: React.FC = () => {
 
   const compliance = [
     {
-      title: 'Vendor-Ready Status',
-      desc: 'Registered business entity basics, tax-compliant capacity, and active KRA PIN.'
+      title: 'Engagement Readiness',
+      desc: 'Registered sole proprietorship with active business and tax-registration foundations for professional engagements.'
     },
     {
       title: 'Professional Logistics',
-      desc: 'Operates with dedicated professional workstations, communications setups, and secure cloud backups.'
+      desc: 'Works with dedicated computing, communication, and cloud-based file-management tools for client delivery.'
     },
     {
       title: 'Institutional Experience',
@@ -37,7 +37,7 @@ const Engagement: React.FC = () => {
     },
     {
       title: 'Structured Governance',
-      desc: 'Uses formal onboarding, written Service Level Agreements (SLAs), detailed timesheets, and professional itemized invoices.'
+      desc: 'Supports structured onboarding, written scopes of work, timesheets, service agreements where required, and itemised invoicing.'
     }
   ];
 

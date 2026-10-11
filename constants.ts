@@ -205,7 +205,7 @@ export const IMPACT_AREAS: ImpactArea[] = [
         role: 'Private AI-assisted career application workspace',
         organizations: 'Private repository',
         year: '2024',
-        details: 'Supports job-description extraction from text, images, and PDFs; grounded employer and requirement analysis; evidence/gap separation; schema-validated editable CVs and cover letters; ATS-readiness and keyword-coverage estimates; claim warnings; DOCX and text-based PDF export; and complete career-profile JSON backup/import. Its current client-side Gemini integration would require a server-side API boundary before public deployment.',
+        details: 'Analyses job descriptions and employer requirements against verified career evidence to create editable CVs, cover letters, and application responses, with document extraction, gap analysis, claim checks, ATS estimates, and DOCX/PDF export.',
         tags: ['React', 'TypeScript', 'Gemini API', 'Schema Validation', 'ATS', 'DOCX / PDF Export']
       }
     ]
@@ -335,7 +335,7 @@ export const RESEARCH_SYSTEM_CARDS: ResearchSystem[] = [
   {
     title: 'UNAIDS Community Rights Survey',
     role: 'Research Assistant & Cluster Team Lead (Cluster 2)',
-    year: '24',
+    year: '2024',
     scope: 'Rights, gender, and HIV response assessment in Central Kenya (Nairobi, Kajiado, Embu, Kitui).',
     impact: 'Supervised primary field interviews, facilitated focus group discussions (FGDs) with vulnerable groups, and maintained strict ethical and data-quality protocols.',
     toolsMethods: ['Focus Group Discussions (FGD)', 'ODK Mobile Systems', 'Qualitative Analysis', 'Ethical Compliance'],
@@ -360,7 +360,7 @@ export const EXPERIENCE: ExperienceItem[] = [
     description: [
       'Selected through competitive national recruitment for HIV/TB, SRH, Human Rights, and Gender Needs Baseline in Kenya Prisons.',
       'Supervised 8 Research Assistants executing survey protocols across Nakuru, Eldoret, and Kitale.',
-      'Over-saw stakeholder field operations, ethical conformance, technical data validation, and daily data reporting chains.'
+      'Oversaw stakeholder field operations, ethical conformance, technical data validation, and daily data reporting chains.'
     ]
   },
   {
@@ -400,8 +400,8 @@ export const EXPERIENCE: ExperienceItem[] = [
     company: 'Maisha Youth Movement (National)',
     description: [
       'Supported national digital operations across 47 county chapters, including Google Workspace and Google Cloud migrations for secure inter-chapter document repositories.',
-      'Engineered wireframes and high-conversion sitemaps in Figma to coordinate the national website development budget.',
-      'Pioneered ODK frameworks for nationwide qualitative/quantitative youth research, supporting administrative work plans.'
+      'Developed website sitemaps and Figma wireframes to coordinate the national website development budget.',
+      'Developed ODK frameworks for nationwide qualitative and quantitative youth research, supporting administrative work plans.'
     ]
   },
   {
@@ -468,7 +468,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Home Builders Research — County Deed Data Platform',
     category: 'Data Engineering & Research Automation',
-    description: 'Designed and developed a reusable Python and Selenium platform for collecting and validating county deed records. Greenville is the completed reference adapter, with pagination integrity, resumable enrichment, QC validation, immutable exports, recovery safeguards, cross-platform CI, and engineering handover; production acceptance remains a separate operational gate.',
+    description: 'A reusable Python and Selenium platform for collecting and validating county deed records. Its completed Greenville reference adapter supports reliable pagination, resumable enrichment, QC checks, immutable exports, and recovery-ready engineering handover.',
     techStack: ['Python', 'Selenium', 'Data Validation', 'Recovery', 'GitHub Actions', 'Windows / Linux'],
     status: 'Private client implementation · Reference adapter and engineering handover complete',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800'
@@ -476,7 +476,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'BeeEPiC WISDOM Delegation Mapper',
     category: 'Business Systems & AI Decision Support',
-    description: 'Contributed to a structured business diagnostic that converts context, bottlenecks, delegation goals, tasks, and current systems into practical role, workflow, systems, and KPI recommendations. The implementation combines deterministic logic, bounded Gemini enhancement, rules fallback, human review, structured submission storage, notifications, QA, and regression testing.',
+    description: 'A structured business diagnostic that turns business context, bottlenecks, and delegation goals into practical role, workflow, systems, and KPI recommendations. It combines deterministic logic with bounded Gemini enhancement, rules fallback, human review, and structured submission handling.',
     techStack: ['Business Analysis', 'React', 'Google Apps Script', 'Gemini', 'Structured Data', 'Regression Testing'],
     status: 'Private client work · Sanitised case study',
     links: [
@@ -487,7 +487,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Asili — Commerce & Business Operations System',
     category: 'Full-Stack Business Systems',
-    description: 'Evolved a Kenyan honey brand from a public website into an API-backed commerce and owner-operations platform. Implemented ordering, customer and product records, inventory movements, payment workflows, authenticated administration, manual sales, lifecycle notifications, and sales reporting; the batch passport remains a labelled demonstration.',
+    description: 'An API-backed commerce and owner-operations system for a Kenyan honey brand. It connects ordering, customer and product records, inventory movements, payments, manual sales, lifecycle notifications, and sales reporting; the batch passport remains a labelled demonstration.',
     techStack: ['React', 'TypeScript', 'Express', 'PostgreSQL', 'Prisma', 'REST APIs'],
     status: 'Working system · Traceability demonstration clearly labelled',
     links: [
@@ -500,7 +500,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Stawi — Member & Coach Fitness Platform',
     category: 'Product R&D & Application Engineering',
-    description: 'Designing and building a member-centred, trainer-connected fitness platform linking programmes, workout execution, retained training evidence, coach visibility, and progress workflows. Alpha 0.8.0 implements member and coach workspaces, programme and workout flows, device-local IndexedDB history, evidence views, an exercise catalogue, and an installable PWA.',
+    description: 'Designing and building a member-centred, trainer-connected fitness platform linking programmes, workout execution, progress evidence, and coach visibility. Alpha 0.8.0 includes member and coach workspaces, workout and programme flows, device-local session history, an exercise catalogue, and an installable PWA.',
     techStack: ['React', 'TypeScript', 'React Router', 'IndexedDB', 'PWA', 'CSS Modules'],
     status: 'Product R&D · Interactive Alpha 0.8.0',
     image: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=800'
@@ -508,7 +508,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'Silatech Growth Partners',
     category: 'Business Systems & Digital Transformation',
-    description: 'My founder-led consulting platform, formally registered as a sole proprietorship in 2026 after independent freelance work began in 2024. Silatech delivers practical business systems, workflow automation, AI-assisted operations, reporting, operational intelligence, and digital transformation for SMEs, NGOs, and growing organisations.',
+    description: 'My founder-led consulting platform, formalised as a registered sole proprietorship in 2026 after freelance work began in 2024. Silatech builds practical business systems, AI-assisted workflows, operational reporting, and digital solutions for SMEs, NGOs, and growing organisations.',
     techStack: ['Workflow Design', 'Business Systems', 'Operational Intelligence', 'AI-assisted Workflows', 'Research Support', 'Netlify'],
     links: [
       { label: 'Live Site', url: 'https://kevsilaservices.netlify.app', type: 'live' }
@@ -518,7 +518,7 @@ export const PROJECTS: Project[] = [
   {
     title: 'AI Job Application Assistant',
     category: 'AI & Productivity',
-    description: 'A private AI-assisted career application workspace supporting job-description extraction from text, images, and PDFs; grounded employer and requirement analysis; evidence/gap separation; schema-validated editable CVs and cover letters; ATS-readiness and keyword-coverage estimates; claim warnings; DOCX and text-based PDF export; and complete career-profile JSON backup/import. Its current client-side Gemini integration would require a server-side API boundary before public deployment.',
+    description: 'A private AI-assisted career workspace that analyses job descriptions and employer requirements, maps them against verified career evidence, and produces editable ATS-focused CVs, cover letters, and application responses. It also supports document extraction, gap analysis, claim checks, and DOCX/PDF export.',
     techStack: ['React', 'TypeScript', 'Gemini API', 'Schema Validation', 'ATS Analysis', 'DOCX / PDF Export'],
     status: 'Private AI-assisted career application workspace',
     image: 'https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=800'

@@ -16,7 +16,7 @@ const Research: React.FC = () => {
           </div>
           <h3 className="text-textLight text-3xl md:text-4xl font-semibold tracking-tight">Research Systems</h3>
           <p className="text-textDim text-sm md:text-base leading-relaxed font-light opacity-95">
-            Leading field coordinators, managing nationwide digital survey implementations (CAPI/ODK), and streamlining complex administrative data collection.
+            Field coordination, digital surveys, and structured research-data operations.
           </p>
         </div>
 
